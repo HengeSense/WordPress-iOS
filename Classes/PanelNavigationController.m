@@ -235,7 +235,7 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-
+    
     UIView *viewToPrepare = nil;
     if (self.navigationController) {
         viewToPrepare = self.navigationController.view;

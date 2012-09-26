@@ -431,6 +431,20 @@
 		CC9A63AA15E5A427000D653D /* sidebar_note.png in Resources */ = {isa = PBXBuildFile; fileRef = CC9A63A815E5A427000D653D /* sidebar_note.png */; };
 		CC9A63AB15E5A427000D653D /* sidebar_note@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CC9A63A915E5A427000D653D /* sidebar_note@2x.png */; };
 		CCB3A04014C8E12700D43C3F /* WPReaderTopicsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCB3A03F14C8E12700D43C3F /* WPReaderTopicsViewController.m */; };
+		CCBEFC4D164C379E0030B91B /* TwoFactorManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CCBEFC48164C379E0030B91B /* TwoFactorManager.m */; };
+		CCBEFC4E164C379E0030B91B /* TwoFactorModalView.m in Sources */ = {isa = PBXBuildFile; fileRef = CCBEFC4A164C379E0030B91B /* TwoFactorModalView.m */; };
+		CCBEFC4F164C379E0030B91B /* TwoFactorModalViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = CCBEFC4C164C379E0030B91B /* TwoFactorModalViewController.mm */; };
+		CCBEFC6A164C37C30030B91B /* HOTPGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = CCBEFC52164C37C30030B91B /* HOTPGenerator.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CCBEFC6B164C37C30030B91B /* OTPAuthURL.m in Sources */ = {isa = PBXBuildFile; fileRef = CCBEFC54164C37C30030B91B /* OTPAuthURL.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CCBEFC6C164C37C30030B91B /* OTPGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = CCBEFC56164C37C30030B91B /* OTPGenerator.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CCBEFC6D164C37C30030B91B /* OTPScannerOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = CCBEFC58164C37C30030B91B /* OTPScannerOverlayView.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CCBEFC6E164C37C30030B91B /* TOTPGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = CCBEFC5A164C37C30030B91B /* TOTPGenerator.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CCBEFC6F164C37C30030B91B /* GTMMethodCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = CCBEFC5F164C37C30030B91B /* GTMMethodCheck.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CCBEFC70164C37C30030B91B /* GTMNSDictionary+URLArguments.m in Sources */ = {isa = PBXBuildFile; fileRef = CCBEFC61164C37C30030B91B /* GTMNSDictionary+URLArguments.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CCBEFC71164C37C30030B91B /* GTMNSScanner+Unsigned.m in Sources */ = {isa = PBXBuildFile; fileRef = CCBEFC63164C37C30030B91B /* GTMNSScanner+Unsigned.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CCBEFC72164C37C30030B91B /* GTMNSString+URLArguments.m in Sources */ = {isa = PBXBuildFile; fileRef = CCBEFC65164C37C30030B91B /* GTMNSString+URLArguments.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CCBEFC73164C37C30030B91B /* GTMObjC2Runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = CCBEFC67164C37C30030B91B /* GTMObjC2Runtime.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		CCBEFC74164C37C30030B91B /* GTMStringEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = CCBEFC69164C37C30030B91B /* GTMStringEncoding.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		CCDCBC201590BF2A0040B3B1 /* FBDialog.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CCDCBC131590BF2A0040B3B1 /* FBDialog.bundle */; };
 		CCDCBC211590BF2A0040B3B1 /* libfacebook_ios_sdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CCDCBC191590BF2A0040B3B1 /* libfacebook_ios_sdk.a */; };
 		CCEF153114C9EA050001176D /* WPWebAppViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CCEF153014C9EA050001176D /* WPWebAppViewController.m */; };
@@ -1089,6 +1103,36 @@
 		CC9A63A915E5A427000D653D /* sidebar_note@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sidebar_note@2x.png"; sourceTree = "<group>"; };
 		CCB3A03E14C8E12700D43C3F /* WPReaderTopicsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WPReaderTopicsViewController.h; sourceTree = "<group>"; };
 		CCB3A03F14C8E12700D43C3F /* WPReaderTopicsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WPReaderTopicsViewController.m; sourceTree = "<group>"; };
+		CCBEFC47164C379E0030B91B /* TwoFactorManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoFactorManager.h; sourceTree = "<group>"; };
+		CCBEFC48164C379E0030B91B /* TwoFactorManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoFactorManager.m; sourceTree = "<group>"; };
+		CCBEFC49164C379E0030B91B /* TwoFactorModalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoFactorModalView.h; sourceTree = "<group>"; };
+		CCBEFC4A164C379E0030B91B /* TwoFactorModalView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TwoFactorModalView.m; sourceTree = "<group>"; };
+		CCBEFC4B164C379E0030B91B /* TwoFactorModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TwoFactorModalViewController.h; sourceTree = "<group>"; };
+		CCBEFC4C164C379E0030B91B /* TwoFactorModalViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TwoFactorModalViewController.mm; sourceTree = "<group>"; };
+		CCBEFC51164C37C30030B91B /* HOTPGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HOTPGenerator.h; sourceTree = "<group>"; };
+		CCBEFC52164C37C30030B91B /* HOTPGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HOTPGenerator.m; sourceTree = "<group>"; };
+		CCBEFC53164C37C30030B91B /* OTPAuthURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTPAuthURL.h; sourceTree = "<group>"; };
+		CCBEFC54164C37C30030B91B /* OTPAuthURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTPAuthURL.m; sourceTree = "<group>"; };
+		CCBEFC55164C37C30030B91B /* OTPGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTPGenerator.h; sourceTree = "<group>"; };
+		CCBEFC56164C37C30030B91B /* OTPGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTPGenerator.m; sourceTree = "<group>"; };
+		CCBEFC57164C37C30030B91B /* OTPScannerOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTPScannerOverlayView.h; sourceTree = "<group>"; };
+		CCBEFC58164C37C30030B91B /* OTPScannerOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTPScannerOverlayView.m; sourceTree = "<group>"; };
+		CCBEFC59164C37C30030B91B /* TOTPGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOTPGenerator.h; sourceTree = "<group>"; };
+		CCBEFC5A164C37C30030B91B /* TOTPGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOTPGenerator.m; sourceTree = "<group>"; };
+		CCBEFC5C164C37C30030B91B /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		CCBEFC5D164C37C30030B91B /* GTMGarbageCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMGarbageCollection.h; sourceTree = "<group>"; };
+		CCBEFC5E164C37C30030B91B /* GTMMethodCheck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMMethodCheck.h; sourceTree = "<group>"; };
+		CCBEFC5F164C37C30030B91B /* GTMMethodCheck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMMethodCheck.m; sourceTree = "<group>"; };
+		CCBEFC60164C37C30030B91B /* GTMNSDictionary+URLArguments.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GTMNSDictionary+URLArguments.h"; sourceTree = "<group>"; };
+		CCBEFC61164C37C30030B91B /* GTMNSDictionary+URLArguments.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GTMNSDictionary+URLArguments.m"; sourceTree = "<group>"; };
+		CCBEFC62164C37C30030B91B /* GTMNSScanner+Unsigned.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GTMNSScanner+Unsigned.h"; sourceTree = "<group>"; };
+		CCBEFC63164C37C30030B91B /* GTMNSScanner+Unsigned.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GTMNSScanner+Unsigned.m"; sourceTree = "<group>"; };
+		CCBEFC64164C37C30030B91B /* GTMNSString+URLArguments.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GTMNSString+URLArguments.h"; sourceTree = "<group>"; };
+		CCBEFC65164C37C30030B91B /* GTMNSString+URLArguments.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GTMNSString+URLArguments.m"; sourceTree = "<group>"; };
+		CCBEFC66164C37C30030B91B /* GTMObjC2Runtime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMObjC2Runtime.h; sourceTree = "<group>"; };
+		CCBEFC67164C37C30030B91B /* GTMObjC2Runtime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMObjC2Runtime.m; sourceTree = "<group>"; };
+		CCBEFC68164C37C30030B91B /* GTMStringEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMStringEncoding.h; sourceTree = "<group>"; };
+		CCBEFC69164C37C30030B91B /* GTMStringEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMStringEncoding.m; sourceTree = "<group>"; };
 		CCDCBC111590BF2A0040B3B1 /* Facebook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Facebook.h; sourceTree = "<group>"; };
 		CCDCBC121590BF2A0040B3B1 /* FBConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBConnect.h; sourceTree = "<group>"; };
 		CCDCBC131590BF2A0040B3B1 /* FBDialog.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FBDialog.bundle; sourceTree = "<group>"; };
@@ -1384,6 +1428,7 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				CCBEFC45164C37690030B91B /* TwoFactor */,
 				E159D1011309AAF200F498E2 /* Migrations */,
 				C59D3D480E6410BC00AA591D /* Categories */,
 				AC34397A0E11435A00E5D79B /* Controllers */,
@@ -2296,6 +2341,59 @@
 			name = Reader;
 			sourceTree = "<group>";
 		};
+		CCBEFC45164C37690030B91B /* TwoFactor */ = {
+			isa = PBXGroup;
+			children = (
+				CCBEFC47164C379E0030B91B /* TwoFactorManager.h */,
+				CCBEFC48164C379E0030B91B /* TwoFactorManager.m */,
+				CCBEFC49164C379E0030B91B /* TwoFactorModalView.h */,
+				CCBEFC4A164C379E0030B91B /* TwoFactorModalView.m */,
+				CCBEFC4B164C379E0030B91B /* TwoFactorModalViewController.h */,
+				CCBEFC4C164C379E0030B91B /* TwoFactorModalViewController.mm */,
+			);
+			name = TwoFactor;
+			sourceTree = "<group>";
+		};
+		CCBEFC50164C37C30030B91B /* GoogleAuthenticator */ = {
+			isa = PBXGroup;
+			children = (
+				CCBEFC51164C37C30030B91B /* HOTPGenerator.h */,
+				CCBEFC52164C37C30030B91B /* HOTPGenerator.m */,
+				CCBEFC53164C37C30030B91B /* OTPAuthURL.h */,
+				CCBEFC54164C37C30030B91B /* OTPAuthURL.m */,
+				CCBEFC55164C37C30030B91B /* OTPGenerator.h */,
+				CCBEFC56164C37C30030B91B /* OTPGenerator.m */,
+				CCBEFC57164C37C30030B91B /* OTPScannerOverlayView.h */,
+				CCBEFC58164C37C30030B91B /* OTPScannerOverlayView.m */,
+				CCBEFC59164C37C30030B91B /* TOTPGenerator.h */,
+				CCBEFC5A164C37C30030B91B /* TOTPGenerator.m */,
+			);
+			name = GoogleAuthenticator;
+			path = Vendor/GoogleAuthenticator;
+			sourceTree = "<group>";
+		};
+		CCBEFC5B164C37C30030B91B /* GoogleToolboxForMac */ = {
+			isa = PBXGroup;
+			children = (
+				CCBEFC5C164C37C30030B91B /* GTMDefines.h */,
+				CCBEFC5D164C37C30030B91B /* GTMGarbageCollection.h */,
+				CCBEFC5E164C37C30030B91B /* GTMMethodCheck.h */,
+				CCBEFC5F164C37C30030B91B /* GTMMethodCheck.m */,
+				CCBEFC60164C37C30030B91B /* GTMNSDictionary+URLArguments.h */,
+				CCBEFC61164C37C30030B91B /* GTMNSDictionary+URLArguments.m */,
+				CCBEFC62164C37C30030B91B /* GTMNSScanner+Unsigned.h */,
+				CCBEFC63164C37C30030B91B /* GTMNSScanner+Unsigned.m */,
+				CCBEFC64164C37C30030B91B /* GTMNSString+URLArguments.h */,
+				CCBEFC65164C37C30030B91B /* GTMNSString+URLArguments.m */,
+				CCBEFC66164C37C30030B91B /* GTMObjC2Runtime.h */,
+				CCBEFC67164C37C30030B91B /* GTMObjC2Runtime.m */,
+				CCBEFC68164C37C30030B91B /* GTMStringEncoding.h */,
+				CCBEFC69164C37C30030B91B /* GTMStringEncoding.m */,
+			);
+			name = GoogleToolboxForMac;
+			path = Vendor/GoogleToolboxForMac;
+			sourceTree = "<group>";
+		};
 		CCDCBC101590BF2A0040B3B1 /* facebook-ios-sdk */ = {
 			isa = PBXGroup;
 			children = (
@@ -2397,6 +2495,8 @@
 				E12F95B6155820A40067A653 /* KVO+Blocks */,
 				E1EAD53D1554498000C0ED7A /* CameraPlus */,
 				837614E8120A7FA3005CCB33 /* XMLRPC */,
+				CCBEFC50164C37C30030B91B /* GoogleAuthenticator */,
+				CCBEFC5B164C37C30030B91B /* GoogleToolboxForMac */,
 			);
 			name = Vendor;
 			sourceTree = "<group>";
@@ -3210,6 +3310,20 @@
 				5DC3A44D1610B9BC00A890BE /* UINavigationController+Rotation.m in Sources */,
 				E1A0FAE7162F11CF0063B098 /* UIDevice+WordPressIdentifier.m in Sources */,
 				E10466081630961700E8EDDA /* WPRSDParser.m in Sources */,
+				CCBEFC4D164C379E0030B91B /* TwoFactorManager.m in Sources */,
+				CCBEFC4E164C379E0030B91B /* TwoFactorModalView.m in Sources */,
+				CCBEFC4F164C379E0030B91B /* TwoFactorModalViewController.mm in Sources */,
+				CCBEFC6A164C37C30030B91B /* HOTPGenerator.m in Sources */,
+				CCBEFC6B164C37C30030B91B /* OTPAuthURL.m in Sources */,
+				CCBEFC6C164C37C30030B91B /* OTPGenerator.m in Sources */,
+				CCBEFC6D164C37C30030B91B /* OTPScannerOverlayView.m in Sources */,
+				CCBEFC6E164C37C30030B91B /* TOTPGenerator.m in Sources */,
+				CCBEFC6F164C37C30030B91B /* GTMMethodCheck.m in Sources */,
+				CCBEFC70164C37C30030B91B /* GTMNSDictionary+URLArguments.m in Sources */,
+				CCBEFC71164C37C30030B91B /* GTMNSScanner+Unsigned.m in Sources */,
+				CCBEFC72164C37C30030B91B /* GTMNSString+URLArguments.m in Sources */,
+				CCBEFC73164C37C30030B91B /* GTMObjC2Runtime.m in Sources */,
+				CCBEFC74164C37C30030B91B /* GTMStringEncoding.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

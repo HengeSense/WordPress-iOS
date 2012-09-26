@@ -14,3 +14,16 @@ facebook-ios-sdk
 Source: https://github.com/facebook/facebook-ios-sdk
 Version: 397c0b62b116a9680035e87a07ab936e1c5dfce6
 Note: Built static lib using scripts/build_facebook_ios_sdk_static_lib.sh
+
+GoogleAuthenticator
+Source: https://code.google.com/p/google-authenticator/
+Version: a096a628455a05c5ff3b651e6aeb1dad9a646742
+
+GoogleToolboxForMac
+Source: http://google-toolbox-for-mac.googlecode.com/svn/trunk
+Version: 579
+
+Zxing:
+Source: http://zxing.googlecode.com/svn/trunk
+Version: 2420
+

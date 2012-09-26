@@ -29,6 +29,9 @@
 #import "QuickPhotoViewController.h"
 #import "QuickPhotoButtonView.h"
 #import "CrashReportViewController.h"
+#import "WPTwoStepManagerView.h"
+#import "TwoStepAuthManager.h"
+#import "OTPAuthURLEntryController.h"
 
 // Height for reader/notification/blog cells
 #define SIDEBAR_CELL_HEIGHT 51.0f
@@ -39,7 +42,7 @@
 #define DEFAULT_ROW_HEIGHT 48
 #define NUM_ROWS 6
 
-@interface SidebarViewController () <NSFetchedResultsControllerDelegate, QuickPhotoButtonViewDelegate> {
+@interface SidebarViewController () <NSFetchedResultsControllerDelegate, QuickPhotoButtonViewDelegate, WPTwoStepManagerViewDelegate, OTPAuthURLEntryControllerDelegate> {
     QuickPhotoButtonView *quickPhotoButton;
     UIActionSheet *quickPhotoActionSheet;
     BOOL selectionRestored;
@@ -55,7 +58,11 @@
 @property (nonatomic, weak) SectionInfo *openSection;
 @property (nonatomic, strong) NSMutableArray *sectionInfoArray;
 @property (readonly) NSInteger topSectionRowCount;
-@property (nonatomic, strong) NSIndexPath *currentIndexPath;
+@property (nonatomic, retain) NSIndexPath *currentIndexPath;
+@property (nonatomic, retain) UISwipeGestureRecognizer *authSwipe;
+@property (nonatomic, retain) WPTwoStepManagerView *twoStepView;
+@property (nonatomic, retain) UITapGestureRecognizer *closeTwoStepTap;
+@property (nonatomic, retain) TwoStepAuthManager *twoStepAuthManager;
 
 - (SectionInfo *)sectionInfoForBlog:(Blog *)blog;
 - (void)addSectionInfoForBlog:(Blog *)blog;
@@ -79,7 +86,8 @@
 - (void)checkNothingToShow;
 - (void)handleCrashReport;
 - (void)dismissCrashReporter:(NSNotification *)notification;
-
+- (void)detectAuthSwipe:(UISwipeGestureRecognizer *)swipeGesture;
+- (void)cancelTwoStepEntry:(id)sender;
 @end
 
 @implementation SidebarViewController
@@ -90,10 +98,10 @@
 @synthesize utililtyView;
 @synthesize currentIndexPath;
 @synthesize quickPhotoActionSheet;
+@synthesize authSwipe = _authSwipe;
 
 - (void)dealloc {
-    self.resultsController.delegate = nil;
-    
+    self.resultsController.delegate = nil;    
 }
 
 - (void)viewDidLoad {
@@ -153,6 +161,19 @@
         // and not here. 
         restoringView = YES;
     }
+    
+    self.authSwipe = [[[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(detectAuthSwipe:)] autorelease];
+    self.authSwipe.direction = UISwipeGestureRecognizerDirectionUp;
+    self.authSwipe.numberOfTouchesRequired = 1;
+    [self.view addGestureRecognizer:self.authSwipe];
+    
+    self.closeTwoStepTap = [[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(detectCloseTwoStep:)] autorelease];
+    self.closeTwoStepTap.numberOfTapsRequired = 1;
+    self.closeTwoStepTap.numberOfTouchesRequired = 1;
+    [self.view.window addGestureRecognizer:self.closeTwoStepTap];
+    self.closeTwoStepTap.enabled = NO;
+    
+    self.twoStepAuthManager = [TwoStepAuthManager authManager];
 }
 
 - (void)viewDidUnload {
@@ -164,6 +185,11 @@
     self.quickPhotoButton.delegate = nil;
     self.quickPhotoButton = nil;
     self.quickPhotoActionSheet = nil;
+    self.authSwipe = nil;
+    self.closeTwoStepTap = nil;
+    self.twoStepView.delegate = nil;
+    self.twoStepView = nil;
+    self.twoStepAuthManager = nil;
     
 //    self.sectionInfoArray = nil;
     [[NSNotificationCenter defaultCenter] removeObserver:self];
@@ -1144,6 +1170,114 @@ NSLog(@"%@", self.sectionInfoArray);
             break;
         }
     }
+}
+
+#pragma mark - Two-Step UI methods
+
+- (void)detectAuthSwipe:(UISwipeGestureRecognizer *)swipeGesture {
+    if (swipeGesture.state == UIGestureRecognizerStateEnded) {
+        if(CGRectContainsPoint(self.utililtyView.frame,[swipeGesture locationInView:self.view])){
+            [self showTwoStepController];
+            [self.utililtyView setUserInteractionEnabled:NO];
+        }
+    }
+    
+}
+
+- (void)detectCloseTwoStep:(UITapGestureRecognizer *)tapGesture {
+    CGPoint location = [tapGesture locationInView:self.twoStepView];
+    if (!CGRectContainsPoint(self.twoStepView.bounds, location)) {
+        [self hideTwoStepController];
+    }
+}
+
+
+
+- (void)showTwoStepController {
+    
+    CGRect twoStepFrame = self.view.frame;
+    twoStepFrame.origin.y = self.view.frame.size.height;
+    twoStepFrame.size.height -= 60.f;
+    
+    self.twoStepView = [[[WPTwoStepManagerView alloc] initWithFrame:twoStepFrame] autorelease];
+    [self.view addSubview:self.twoStepView];
+    self.twoStepView.backgroundColor = [UIColor redColor];
+    self.twoStepView.delegate = self;
+    
+    
+    [self.twoStepAuthManager manageTableView:self.twoStepView.tableView];
+    
+    // move them up by view height minus 60.f
+    CGAffineTransform slide = CGAffineTransformTranslate(CGAffineTransformIdentity, 0.f, -twoStepFrame.size.height);
+    [self.view addGestureRecognizer:self.closeTwoStepTap];
+    self.authSwipe.enabled = NO;
+    self.closeTwoStepTap.enabled = YES;
+    [UIView animateWithDuration:0.2f animations:^{
+        self.tableView.transform = slide;
+        self.utililtyView.transform = slide;
+        self.twoStepView.transform = slide;
+    }];
+    
+}
+
+- (void)hideTwoStepController {
+    
+    [UIView animateWithDuration:0.2f animations:^{
+        CGAffineTransform identity = CGAffineTransformIdentity;
+        self.twoStepView.transform = identity;
+        self.tableView.transform = identity;
+        self.utililtyView.transform = identity;
+    } completion:^(BOOL finished) {
+        self.utililtyView.userInteractionEnabled = YES;
+        [self.twoStepView removeFromSuperview];
+        self.twoStepView = nil;
+        self.authSwipe.enabled = YES;
+        self.closeTwoStepTap.enabled = NO;
+    }];
+    
+}
+
+- (void)addNewTwoStepAuthURL:(id)sender{
+
+    
+    OTPAuthURLEntryController *authEntryController = [[OTPAuthURLEntryController alloc] init];
+    
+    UIBarButtonItem *doneButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:authEntryController action:@selector(done:)];
+    
+    UIBarButtonItem *cancelButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(cancelTwoStepEntry:)];
+
+    authEntryController.navigationItem.leftBarButtonItem = cancelButton;
+    authEntryController.title = @"Hi";
+    authEntryController.navigationItem.rightBarButtonItem = doneButton;
+    
+    
+    authEntryController.delegate = self;
+    
+    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController:authEntryController];
+    
+    [self presentModalViewController:navController animated:YES];
+        
+    
+    [doneButton release];
+    [cancelButton release];
+    [authEntryController release];
+
+    
+}
+
+- (void)cancelTwoStepEntry:(id)sender {
+    [self dismissModalViewControllerAnimated:YES];
+}
+
+- (void)managerViewDidPressAddButton:(WPTwoStepManagerView *)managerView {
+    [self addNewTwoStepAuthURL:nil];
+}
+
+- (void)authURLEntryController:(OTPAuthURLEntryController *)controller didCreateAuthURL:(OTPAuthURL *)authURL {
+    [self cancelTwoStepEntry:nil];
+    
+    [self.twoStepAuthManager addAuthURL:authURL];
+    [self.twoStepView.tableView reloadData];
 }
 
 @end

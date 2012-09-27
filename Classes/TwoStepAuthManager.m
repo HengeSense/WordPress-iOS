@@ -7,6 +7,7 @@
 //
 
 #import "TwoStepAuthManager.h"
+#import "WPTwoStepAuthTableViewCell.h"
 
 NSString * const TwoStepAuthManagerTableCellIdentifier = @"Two Step Table Cell";
 NSString * const TwoStepAuthManagerKeychainEntriesArray = @"OTPKeychainEntries";
@@ -38,7 +39,9 @@ NSString * const TwoStepAuthManagerKeychainEntriesArray = @"OTPKeychainEntries";
 
 - (void)manageTableView:(UITableView *)tableView {
     tableView.dataSource = self;
-    [tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:TwoStepAuthManagerTableCellIdentifier];
+    tableView.delegate = self;
+    tableView.rowHeight = WPTwoStepAuthTableViewCellHeight;
+    [tableView registerClass:[WPTwoStepAuthTableViewCell class] forCellReuseIdentifier:TwoStepAuthManagerTableCellIdentifier];
 }
 
 - (void)loadKeychainReferences {
@@ -78,6 +81,20 @@ NSString * const TwoStepAuthManagerKeychainEntriesArray = @"OTPKeychainEntries";
     cell.textLabel.textAlignment = NSTextAlignmentCenter;
     return cell;
 }
+
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+    return YES;
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        NSIndexSet *set = [NSIndexSet indexSetWithIndex:indexPath.section];
+        [self.authURLs removeObjectsAtIndexes:set];
+        [self saveKeychainReferences];
+        [tableView deleteSections:[NSIndexSet indexSetWithIndex:indexPath.section] withRowAnimation:UITableViewRowAnimationAutomatic];
+    }
+}
+
 
 - (void)addAuthURL:(OTPAuthURL *)authURL {
     [authURL saveToKeychain];

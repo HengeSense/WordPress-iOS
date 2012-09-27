@@ -39,6 +39,11 @@
         self.tableView = [[[UITableView alloc] initWithFrame:tableViewRect style:UITableViewStyleGrouped] autorelease];
         self.tableView.autoresizingMask = UIViewAutoresizingFlexibleBottomMargin;
         
+        UIView *tableViewBackground = [[UIView alloc] initWithFrame:self.tableView.bounds];
+        tableViewBackground.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
+        tableViewBackground.backgroundColor = [UIColor whiteColor];
+        self.tableView.backgroundView = tableViewBackground;
+        [tableViewBackground release];
         
         UIBarButtonItem *space = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
         UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(addButtonPressed:)];

@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "OTPAuthURL.h"
 
-@interface TwoStepAuthManager : NSObject <UITableViewDataSource>
+@interface TwoStepAuthManager : NSObject <UITableViewDataSource, UITableViewDelegate>
 
 + (TwoStepAuthManager *)authManager;
 - (void)manageTableView:(UITableView *)tableView;

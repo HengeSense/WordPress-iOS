@@ -13,6 +13,7 @@
 @property (nonatomic, retain, readwrite) UITableView *tableView;
 @property (nonatomic, retain, readwrite) UIToolbar *toolbar;
 @property (nonatomic, retain, readwrite) UIBarButtonItem *addButton;
+@property (nonatomic, retain) UIProgressView *timerProgress;
 
 - (void)addButtonPressed:(id)sender;
 
@@ -28,16 +29,20 @@
     if (self) {
         // Initialization code
         self.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
-        CGRect toolbarFrame = frame;
+        CGRect toolbarFrame = self.bounds;
         toolbarFrame.size.height = 44.f;
         toolbarFrame.origin.y = frame.size.height - toolbarFrame.size.height;
         self.toolbar = [[[UIToolbar alloc] initWithFrame:toolbarFrame] autorelease];
+        
+        CGRect progressFrame = self.bounds;
+        progressFrame.size.height = 44.f;
+        self.timerProgress = [[[UIProgressView alloc] initWithFrame:progressFrame] autorelease];
 
         CGRect tableViewRect = frame;
-        tableViewRect.size.height -= toolbarFrame.size.height;
-        tableViewRect.origin.y = 0.f;
+        tableViewRect.size.height -= toolbarFrame.size.height + progressFrame.size.height;
+        tableViewRect.origin.y = progressFrame.size.height;
         self.tableView = [[[UITableView alloc] initWithFrame:tableViewRect style:UITableViewStyleGrouped] autorelease];
-        self.tableView.autoresizingMask = UIViewAutoresizingFlexibleBottomMargin;
+        self.tableView.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
         
         UIView *tableViewBackground = [[UIView alloc] initWithFrame:self.tableView.bounds];
         tableViewBackground.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
@@ -54,7 +59,8 @@
         
         [space release];
         [addButton release];
-         
+        
+        [self addSubview:self.timerProgress];
         [self addSubview:self.tableView];
         [self addSubview:self.toolbar];
         

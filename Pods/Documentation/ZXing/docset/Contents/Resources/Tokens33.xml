@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SMSTOResultParser.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SMSTOResultParser</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>SMSTOResultParser.h</DeclaredIn>
+			
+			<NodeRef refid="33"/>
+		</Token>
+		
+		
+	</File>
+</Tokens>

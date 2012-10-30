@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/ZXIllegalArgumentException.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/ZXIllegalArgumentException</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>ZXIllegalArgumentException.h</DeclaredIn>
+			
+			<NodeRef refid="53"/>
+		</Token>
+		
+		
+	</File>
+</Tokens>

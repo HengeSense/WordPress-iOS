@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/ZXCGImageLuminanceSource.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/ZXCGImageLuminanceSource</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>ZXCGImageLuminanceSource.h</DeclaredIn>
+			
+			<NodeRef refid="48"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ZXCGImageLuminanceSource/createImageFromBuffer:</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>ZXCGImageLuminanceSource.h</DeclaredIn>			
+			
+			<Declaration>+ (CGImageRef)createImageFromBuffer:(CVImageBufferRef)buffer</Declaration>
+			
+			
+			<Anchor>//api/name/createImageFromBuffer:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ZXCGImageLuminanceSource/createImageFromBuffer:left:top:width:height:</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>ZXCGImageLuminanceSource.h</DeclaredIn>			
+			
+			<Declaration>+ (CGImageRef)createImageFromBuffer:(CVImageBufferRef)buffer left:(size_t)left top:(size_t)top width:(size_t)width height:(size_t)height</Declaration>
+			
+			
+			<Anchor>//api/name/createImageFromBuffer:left:top:width:height:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ZXCGImageLuminanceSource/initWithZXImage:left:top:width:height:</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>ZXCGImageLuminanceSource.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithZXImage:(ZXImage *)image left:(size_t)left top:(size_t)top width:(size_t)width height:(size_t)height</Declaration>
+			
+			
+			<Anchor>//api/name/initWithZXImage:left:top:width:height:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ZXCGImageLuminanceSource/initWithZXImage:</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>ZXCGImageLuminanceSource.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithZXImage:(ZXImage *)image</Declaration>
+			
+			
+			<Anchor>//api/name/initWithZXImage:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ZXCGImageLuminanceSource/initWithCGImage:left:top:width:height:</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>ZXCGImageLuminanceSource.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithCGImage:(CGImageRef)image left:(size_t)left top:(size_t)top width:(size_t)width height:(size_t)height</Declaration>
+			
+			
+			<Anchor>//api/name/initWithCGImage:left:top:width:height:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ZXCGImageLuminanceSource/initWithCGImage:</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>ZXCGImageLuminanceSource.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithCGImage:(CGImageRef)image</Declaration>
+			
+			
+			<Anchor>//api/name/initWithCGImage:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ZXCGImageLuminanceSource/initWithBuffer:left:top:width:height:</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>ZXCGImageLuminanceSource.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithBuffer:(CVPixelBufferRef)buffer left:(size_t)left top:(size_t)top width:(size_t)width height:(size_t)height</Declaration>
+			
+			
+			<Anchor>//api/name/initWithBuffer:left:top:width:height:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ZXCGImageLuminanceSource/initWithBuffer:</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>ZXCGImageLuminanceSource.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithBuffer:(CVPixelBufferRef)buffer</Declaration>
+			
+			
+			<Anchor>//api/name/initWithBuffer:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ZXCGImageLuminanceSource/image</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>ZXCGImageLuminanceSource.h</DeclaredIn>			
+			
+			<Declaration>- (CGImageRef)image</Declaration>
+			
+			
+			<Anchor>//api/name/image</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

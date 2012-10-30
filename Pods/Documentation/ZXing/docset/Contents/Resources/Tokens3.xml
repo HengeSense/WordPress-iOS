@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/BizcardResultParser.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/BizcardResultParser</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>BizcardResultParser.h</DeclaredIn>
+			
+			<NodeRef refid="3"/>
+		</Token>
+		
+		
+	</File>
+</Tokens>

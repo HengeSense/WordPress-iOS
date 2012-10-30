@@ -36,6 +36,7 @@
 #import "WordPressComApi.h"
 #import "AboutViewController.h"
 #import "SettingsPageViewController.h"
+#import "TwoFactorManager.h"
 
 typedef enum {
     SettingsSectionBlogs = 0,
@@ -56,6 +57,8 @@ typedef enum {
 - (UITableViewCell *)cellForIndexPath:(NSIndexPath *)indexPath;
 - (void)checkCloseButton;
 - (void)setupMedia;
+- (IBAction)logoutWpcomUser:(id)sender;
+- (IBAction)initializeTwoStep:(id)sender;
 
 @end
 
@@ -241,19 +244,31 @@ typedef enum {
         cell.selectionStyle = UITableViewCellSelectionStyleBlue;
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     } else if (indexPath.section == SettingsSectionWpcom) {
-        if ([WordPressComApi sharedApi].username) {
-            if (indexPath.row == 0) {
-                cell.textLabel.text = NSLocalizedString(@"Username:", @"");
-                cell.detailTextLabel.text = [WordPressComApi sharedApi].username;
-                cell.detailTextLabel.textColor = [UIColor UIColorFromHex:0x888888];
+        if (indexPath.row == 0) {
+            if ([WordPressComApi sharedApi].username) {// 
+                cell.textLabel.text = [WordPressComApi sharedApi].username;
+                cell.detailTextLabel.text = @"";
                 cell.selectionStyle = UITableViewCellSelectionStyleNone;
+                UIButton *logoutButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+                NSString *label = NSLocalizedString(@"Sign Out", @"Sign out from WordPress.com");
+                CGSize labelSize = [label sizeWithFont:logoutButton.titleLabel.font];
+                [logoutButton setTitle:label
+                              forState:UIControlStateNormal];
+                logoutButton.frame = CGRectMake(0.f, 0.f, labelSize.width + 18.f, cell.frame.size.height - 10.f);
+                cell.accessoryView = logoutButton;
+                [logoutButton addTarget:self action:@selector(logoutWpcomUser:) forControlEvents:UIControlEventTouchUpInside];
             } else {
                 cell.textLabel.textAlignment = UITextAlignmentCenter;
-                cell.textLabel.text = NSLocalizedString(@"Sign Out", @"Sign out from WordPress.com");
+                cell.textLabel.text = NSLocalizedString(@"Sign In", @"Sign in to WordPress.com");
             }
         } else {
-            cell.textLabel.textAlignment = UITextAlignmentCenter;
-            cell.textLabel.text = NSLocalizedString(@"Sign In", @"Sign in to WordPress.com");
+            cell.selectionStyle = UITableViewCellSelectionStyleNone;
+            cell.textLabel.text = NSLocalizedString(@"Two-Factor Authentication", @"Two-Factor Authentication setting label") ;
+            if([[TwoFactorManager sharedManager] hasAuthURL]){
+                cell.detailTextLabel.text = NSLocalizedString(@"Active", @"Two-Factor Authentication status: Active");
+            } else {
+                cell.detailTextLabel.text = NSLocalizedString(@"Inactive", @"Two-Factor Authentication status: Inactive");                
+            }
         }
     } else if (indexPath.section == SettingsSectionMedia){
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
@@ -282,6 +297,7 @@ typedef enum {
             cell.textLabel.text = NSLocalizedString(@"About", @"");
             cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
         } else if (indexPath.row == 2) {
+            cell.selectionStyle = UITableViewCellSelectionStyleNone;
             cell.textLabel.text = NSLocalizedString(@"Extra Debug", @"A lable for the settings switch to enable extra debugging and logging.");
             UISwitch *aSwitch = [[UISwitch alloc] initWithFrame:CGRectZero]; // Frame is ignored.
             [aSwitch addTarget:self action:@selector(handleExtraDebugChanged:) forControlEvents:UIControlEventValueChanged];
@@ -378,16 +394,7 @@ typedef enum {
     } else if (indexPath.section == SettingsSectionWpcom) {
         if ([WordPressComApi sharedApi].username) {
             if (indexPath.row == 1) {
-                // Present the Sign out ActionSheet
-                NSString *signOutTitle = NSLocalizedString(@"You are logged in as", @"");
-                signOutTitle = [NSString stringWithFormat:@"%@ %@", signOutTitle, [WordPressComApi sharedApi].username];
-                UIActionSheet *actionSheet;
-                actionSheet = [[UIActionSheet alloc] initWithTitle:signOutTitle 
-                                                          delegate:self 
-                                                 cancelButtonTitle:NSLocalizedString(@"Cancel", @"")
-                                            destructiveButtonTitle:NSLocalizedString(@"Sign Out", @"")otherButtonTitles:nil, nil ];
-                actionSheet.actionSheetStyle = UIActionSheetStyleDefault;
-                [actionSheet showInView:self.view];
+                [self initializeTwoStep:nil];
             }
         } else {
             WPcomLoginViewController *loginViewController = [[WPcomLoginViewController alloc] initWithStyle:UITableViewStyleGrouped];
@@ -508,6 +515,27 @@ typedef enum {
         [self.tableView reloadSections:[NSIndexSet indexSetWithIndex:SettingsSectionWpcom] withRowAnimation:UITableViewRowAnimationFade];
         [self checkCloseButton];
     }
+}
+
+#pragma mark - Log Out
+
+- (void)logoutWpcomUser:(id)sender {
+    // Present the Sign out ActionSheet
+    NSString *signOutTitle = NSLocalizedString(@"You are logged in as", @"");
+    signOutTitle = [NSString stringWithFormat:@"%@ %@", signOutTitle, [WordPressComApi sharedApi].username];
+    UIActionSheet *actionSheet;
+    actionSheet = [[UIActionSheet alloc] initWithTitle:signOutTitle
+                                              delegate:self
+                                     cancelButtonTitle:NSLocalizedString(@"Cancel", @"")
+                                destructiveButtonTitle:NSLocalizedString(@"Sign Out", @"")otherButtonTitles:nil, nil ];
+    actionSheet.actionSheetStyle = UIActionSheetStyleDefault;
+    [actionSheet showInView:self.view];
+
+}
+
+#pragma mark - Two Step UI
+- (void)initializeTwoStep:(id)sender {
+    [[TwoFactorManager sharedManager] showModalView];
 }
 
 @end

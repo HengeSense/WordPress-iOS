@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleIdentifier</key>
+	<string>org.cocoapods.ZXing-2.0</string>
+	<key>CFBundleName</key>
+	<string>ZXing 2.0 Documentation</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleVersion</key>
+	<string>1.0</string>
+	
+	
+	<key>DocSetDescription</key>
+	<string>Multi-format 1D/2D barcode image processing library.</string>
+	
+	<key>DocSetFeedName</key>
+	<string>ZXing 2.0 Documentation</string>
+	
+	<key>DocSetMinimumXcodeVersion</key>
+	<string>3.0</string>
+	
+	<key>DocSetPublisherIdentifier</key>
+	<string>org.cocoapods.documentation</string>
+	<key>DocSetPublisherName</key>
+	<string>ZXing team (http://code.google.com/p/zxing/people/list)</string>
+	<key>NSHumanReadableCopyright</key>
+	<string>ZXing team (http://code.google.com/p/zxing/people/list)</string>
+</dict>
+</plist>

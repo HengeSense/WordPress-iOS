@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DocSetNodes version="1.0">
+    <TOC>
+        <Node type="folder">
+            <Name>ZXing 2.0</Name>
+            <Path>index.html</Path>
+			<Subnodes>
+				
+				<Node type="folder">
+					<Name>Classes</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="1"/>
+						<NodeRef refid="2"/>
+						<NodeRef refid="3"/>
+						<NodeRef refid="4"/>
+						<NodeRef refid="5"/>
+						<NodeRef refid="6"/>
+						<NodeRef refid="7"/>
+						<NodeRef refid="8"/>
+						<NodeRef refid="9"/>
+						<NodeRef refid="10"/>
+						<NodeRef refid="11"/>
+						<NodeRef refid="12"/>
+						<NodeRef refid="13"/>
+						<NodeRef refid="14"/>
+						<NodeRef refid="15"/>
+						<NodeRef refid="16"/>
+						<NodeRef refid="17"/>
+						<NodeRef refid="18"/>
+						<NodeRef refid="19"/>
+						<NodeRef refid="20"/>
+						<NodeRef refid="21"/>
+						<NodeRef refid="22"/>
+						<NodeRef refid="23"/>
+						<NodeRef refid="24"/>
+						<NodeRef refid="25"/>
+						<NodeRef refid="26"/>
+						<NodeRef refid="27"/>
+						<NodeRef refid="28"/>
+						<NodeRef refid="29"/>
+						<NodeRef refid="30"/>
+						<NodeRef refid="31"/>
+						<NodeRef refid="32"/>
+						<NodeRef refid="33"/>
+						<NodeRef refid="34"/>
+						<NodeRef refid="35"/>
+						<NodeRef refid="36"/>
+						<NodeRef refid="37"/>
+						<NodeRef refid="38"/>
+						<NodeRef refid="39"/>
+						<NodeRef refid="40"/>
+						<NodeRef refid="41"/>
+						<NodeRef refid="42"/>
+						<NodeRef refid="43"/>
+						<NodeRef refid="44"/>
+						<NodeRef refid="45"/>
+						<NodeRef refid="46"/>
+						<NodeRef refid="47"/>
+						<NodeRef refid="48"/>
+						<NodeRef refid="49"/>
+						<NodeRef refid="50"/>
+						<NodeRef refid="51"/>
+						<NodeRef refid="52"/>
+						<NodeRef refid="53"/>
+						<NodeRef refid="54"/>
+						<NodeRef refid="55"/>
+						<NodeRef refid="56"/>
+						<NodeRef refid="57"/>
+						<NodeRef refid="58"/>
+						<NodeRef refid="59"/>
+						<NodeRef refid="60"/>
+						<NodeRef refid="61"/>
+						
+					</Subnodes>
+				</Node>
+				
+				
+				<Node type="folder">
+					<Name>Categories</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="62"/>
+						<NodeRef refid="63"/>
+						<NodeRef refid="64"/>
+						<NodeRef refid="65"/>
+						
+					</Subnodes>
+				</Node>
+				
+				
+				<Node type="folder">
+					<Name>Protocols</Name>
+					<Path>index.html</Path>
+					<Subnodes>
+						<NodeRef refid="66"/>
+						<NodeRef refid="67"/>
+						<NodeRef refid="68"/>
+						<NodeRef refid="69"/>
+						
+					</Subnodes>
+				</Node>
+				
+			</Subnodes>
+        </Node>
+    </TOC>
+	<Library>
+		<Node id="1">
+			<Name>AddContactAction</Name>
+			<Path>Classes/AddContactAction.html</Path>
+		</Node>
+		<Node id="2">
+			<Name>AddressBookAUResultParser</Name>
+			<Path>Classes/AddressBookAUResultParser.html</Path>
+		</Node>
+		<Node id="3">
+			<Name>BizcardResultParser</Name>
+			<Path>Classes/BizcardResultParser.html</Path>
+		</Node>
+		<Node id="4">
+			<Name>BookmarkDoCoMoResultParser</Name>
+			<Path>Classes/BookmarkDoCoMoResultParser.html</Path>
+		</Node>
+		<Node id="5">
+			<Name>BusinessCardParsedResult</Name>
+			<Path>Classes/BusinessCardParsedResult.html</Path>
+		</Node>
+		<Node id="6">
+			<Name>CallAction</Name>
+			<Path>Classes/CallAction.html</Path>
+		</Node>
+		<Node id="7">
+			<Name>DataMatrixReader</Name>
+			<Path>Classes/DataMatrixReader.html</Path>
+		</Node>
+		<Node id="8">
+			<Name>Decoder</Name>
+			<Path>Classes/Decoder.html</Path>
+		</Node>
+		<Node id="9">
+			<Name>EmailAction</Name>
+			<Path>Classes/EmailAction.html</Path>
+		</Node>
+		<Node id="10">
+			<Name>EmailAddressResultParser</Name>
+			<Path>Classes/EmailAddressResultParser.html</Path>
+		</Node>
+		<Node id="11">
+			<Name>EmailDoCoMoResultParser</Name>
+			<Path>Classes/EmailDoCoMoResultParser.html</Path>
+		</Node>
+		<Node id="12">
+			<Name>EmailParsedResult</Name>
+			<Path>Classes/EmailParsedResult.html</Path>
+		</Node>
+		<Node id="13">
+			<Name>FormatReader</Name>
+			<Path>Classes/FormatReader.html</Path>
+		</Node>
+		<Node id="14">
+			<Name>GeoParsedResult</Name>
+			<Path>Classes/GeoParsedResult.html</Path>
+		</Node>
+		<Node id="15">
+			<Name>GeoResultParser</Name>
+			<Path>Classes/GeoResultParser.html</Path>
+		</Node>
+		<Node id="16">
+			<Name>ISBNParsedResult</Name>
+			<Path>Classes/ISBNParsedResult.html</Path>
+		</Node>
+		<Node id="17">
+			<Name>ISBNResultParser</Name>
+			<Path>Classes/ISBNResultParser.html</Path>
+		</Node>
+		<Node id="18">
+			<Name>MeCardParser</Name>
+			<Path>Classes/MeCardParser.html</Path>
+		</Node>
+		<Node id="19">
+			<Name>MultiFormatOneDReader</Name>
+			<Path>Classes/MultiFormatOneDReader.html</Path>
+		</Node>
+		<Node id="20">
+			<Name>MultiFormatUPCEANReader</Name>
+			<Path>Classes/MultiFormatUPCEANReader.html</Path>
+		</Node>
+		<Node id="21">
+			<Name>OpenUrlAction</Name>
+			<Path>Classes/OpenUrlAction.html</Path>
+		</Node>
+		<Node id="22">
+			<Name>OverlayView</Name>
+			<Path>Classes/OverlayView.html</Path>
+		</Node>
+		<Node id="23">
+			<Name>ParsedResult</Name>
+			<Path>Classes/ParsedResult.html</Path>
+		</Node>
+		<Node id="24">
+			<Name>PlainEmailResultParser</Name>
+			<Path>Classes/PlainEmailResultParser.html</Path>
+		</Node>
+		<Node id="25">
+			<Name>ProductParsedResult</Name>
+			<Path>Classes/ProductParsedResult.html</Path>
+		</Node>
+		<Node id="26">
+			<Name>ProductResultParser</Name>
+			<Path>Classes/ProductResultParser.html</Path>
+		</Node>
+		<Node id="27">
+			<Name>QRCodeReader</Name>
+			<Path>Classes/QRCodeReader.html</Path>
+		</Node>
+		<Node id="28">
+			<Name>ResultAction</Name>
+			<Path>Classes/ResultAction.html</Path>
+		</Node>
+		<Node id="29">
+			<Name>ResultParser</Name>
+			<Path>Classes/ResultParser.html</Path>
+		</Node>
+		<Node id="30">
+			<Name>SMSAction</Name>
+			<Path>Classes/SMSAction.html</Path>
+		</Node>
+		<Node id="31">
+			<Name>SMSParsedResult</Name>
+			<Path>Classes/SMSParsedResult.html</Path>
+		</Node>
+		<Node id="32">
+			<Name>SMSResultParser</Name>
+			<Path>Classes/SMSResultParser.html</Path>
+		</Node>
+		<Node id="33">
+			<Name>SMSTOResultParser</Name>
+			<Path>Classes/SMSTOResultParser.html</Path>
+		</Node>
+		<Node id="34">
+			<Name>SMTPResultParser</Name>
+			<Path>Classes/SMTPResultParser.html</Path>
+		</Node>
+		<Node id="35">
+			<Name>ShowMapAction</Name>
+			<Path>Classes/ShowMapAction.html</Path>
+		</Node>
+		<Node id="36">
+			<Name>TelParsedResult</Name>
+			<Path>Classes/TelParsedResult.html</Path>
+		</Node>
+		<Node id="37">
+			<Name>TelResultParser</Name>
+			<Path>Classes/TelResultParser.html</Path>
+		</Node>
+		<Node id="38">
+			<Name>TextParsedResult</Name>
+			<Path>Classes/TextParsedResult.html</Path>
+		</Node>
+		<Node id="39">
+			<Name>TextResultParser</Name>
+			<Path>Classes/TextResultParser.html</Path>
+		</Node>
+		<Node id="40">
+			<Name>TwoDDecoderResult</Name>
+			<Path>Classes/TwoDDecoderResult.html</Path>
+		</Node>
+		<Node id="41">
+			<Name>URIParsedResult</Name>
+			<Path>Classes/URIParsedResult.html</Path>
+		</Node>
+		<Node id="42">
+			<Name>URLResultParser</Name>
+			<Path>Classes/URLResultParser.html</Path>
+		</Node>
+		<Node id="43">
+			<Name>URLTOResultParser</Name>
+			<Path>Classes/URLTOResultParser.html</Path>
+		</Node>
+		<Node id="44">
+			<Name>UniversalResultParser</Name>
+			<Path>Classes/UniversalResultParser.html</Path>
+		</Node>
+		<Node id="45">
+			<Name>VCardResultParser</Name>
+			<Path>Classes/VCardResultParser.html</Path>
+		</Node>
+		<Node id="46">
+			<Name>ZXBinarizer</Name>
+			<Path>Classes/ZXBinarizer.html</Path>
+		</Node>
+		<Node id="47">
+			<Name>ZXBinaryBitmap</Name>
+			<Path>Classes/ZXBinaryBitmap.html</Path>
+		</Node>
+		<Node id="48">
+			<Name>ZXCGImageLuminanceSource</Name>
+			<Path>Classes/ZXCGImageLuminanceSource.html</Path>
+		</Node>
+		<Node id="49">
+			<Name>ZXCapture</Name>
+			<Path>Classes/ZXCapture.html</Path>
+		</Node>
+		<Node id="50">
+			<Name>ZXCaptureView</Name>
+			<Path>Classes/ZXCaptureView.html</Path>
+		</Node>
+		<Node id="51">
+			<Name>ZXDecodeHints</Name>
+			<Path>Classes/ZXDecodeHints.html</Path>
+		</Node>
+		<Node id="52">
+			<Name>ZXHybridBinarizer</Name>
+			<Path>Classes/ZXHybridBinarizer.html</Path>
+		</Node>
+		<Node id="53">
+			<Name>ZXIllegalArgumentException</Name>
+			<Path>Classes/ZXIllegalArgumentException.html</Path>
+		</Node>
+		<Node id="54">
+			<Name>ZXImage</Name>
+			<Path>Classes/ZXImage.html</Path>
+		</Node>
+		<Node id="55">
+			<Name>ZXLuminanceSource</Name>
+			<Path>Classes/ZXLuminanceSource.html</Path>
+		</Node>
+		<Node id="56">
+			<Name>ZXMultiFormatReader</Name>
+			<Path>Classes/ZXMultiFormatReader.html</Path>
+		</Node>
+		<Node id="57">
+			<Name>ZXQRCodeReader</Name>
+			<Path>Classes/ZXQRCodeReader.html</Path>
+		</Node>
+		<Node id="58">
+			<Name>ZXReader</Name>
+			<Path>Classes/ZXReader.html</Path>
+		</Node>
+		<Node id="59">
+			<Name>ZXReaderException</Name>
+			<Path>Classes/ZXReaderException.html</Path>
+		</Node>
+		<Node id="60">
+			<Name>ZXResult</Name>
+			<Path>Classes/ZXResult.html</Path>
+		</Node>
+		<Node id="61">
+			<Name>ZXingWidgetController</Name>
+			<Path>Classes/ZXingWidgetController.html</Path>
+		</Node>
+		
+		<Node id="62">
+			<Name>NSArray(DoCoMoStringArray)</Name>
+			<Path>Categories/NSArray(DoCoMoStringArray).html</Path>
+		</Node>
+		<Node id="63">
+			<Name>NSString(DoCoMoFieldParsing)</Name>
+			<Path>Categories/NSString(DoCoMoFieldParsing).html</Path>
+		</Node>
+		<Node id="64">
+			<Name>NSString(HTMLExtensions)</Name>
+			<Path>Categories/NSString(HTMLExtensions).html</Path>
+		</Node>
+		<Node id="65">
+			<Name>NSString(ZXingURLExtensions)</Name>
+			<Path>Categories/NSString(ZXingURLExtensions).html</Path>
+		</Node>
+		
+		<Node id="66">
+			<Name>CancelDelegate</Name>
+			<Path>Protocols/CancelDelegate.html</Path>
+		</Node>
+		<Node id="67">
+			<Name>DecoderDelegate</Name>
+			<Path>Protocols/DecoderDelegate.html</Path>
+		</Node>
+		<Node id="68">
+			<Name>ZXCaptureDelegate</Name>
+			<Path>Protocols/ZXCaptureDelegate.html</Path>
+		</Node>
+		<Node id="69">
+			<Name>ZXingDelegate</Name>
+			<Path>Protocols/ZXingDelegate.html</Path>
+		</Node>
+		
+	</Library>
+</DocSetNodes>

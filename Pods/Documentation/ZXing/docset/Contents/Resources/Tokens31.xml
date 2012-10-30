@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SMSParsedResult.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SMSParsedResult</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>SMSParsedResult.h</DeclaredIn>
+			
+			<NodeRef refid="31"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SMSParsedResult/number</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>SMSParsedResult.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *number</Declaration>
+			
+			
+			<Anchor>//api/name/number</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SMSParsedResult/body</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>SMSParsedResult.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *body</Declaration>
+			
+			
+			<Anchor>//api/name/body</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/SMSParsedResult/initWithNumber:body:</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>SMSParsedResult.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithNumber:(NSString *)n body:(NSString *)b</Declaration>
+			
+			
+			<Anchor>//api/name/initWithNumber:body:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

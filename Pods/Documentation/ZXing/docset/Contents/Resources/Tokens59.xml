@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/ZXReaderException.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/ZXReaderException</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>ZXReaderException.h</DeclaredIn>
+			
+			<NodeRef refid="59"/>
+		</Token>
+		
+		
+	</File>
+</Tokens>

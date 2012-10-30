@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/BusinessCardParsedResult.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/BusinessCardParsedResult</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>BusinessCardParsedResult.h</DeclaredIn>
+			
+			<NodeRef refid="5"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/BusinessCardParsedResult/names</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>BusinessCardParsedResult.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSArray *names</Declaration>
+			
+			
+			<Anchor>//api/name/names</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/BusinessCardParsedResult/pronunciation</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>BusinessCardParsedResult.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *pronunciation</Declaration>
+			
+			
+			<Anchor>//api/name/pronunciation</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/BusinessCardParsedResult/phoneNumbers</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>BusinessCardParsedResult.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSArray *phoneNumbers</Declaration>
+			
+			
+			<Anchor>//api/name/phoneNumbers</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/BusinessCardParsedResult/emails</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>BusinessCardParsedResult.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSArray *emails</Declaration>
+			
+			
+			<Anchor>//api/name/emails</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/BusinessCardParsedResult/note</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>BusinessCardParsedResult.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *note</Declaration>
+			
+			
+			<Anchor>//api/name/note</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/BusinessCardParsedResult/addresses</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>BusinessCardParsedResult.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSArray *addresses</Declaration>
+			
+			
+			<Anchor>//api/name/addresses</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/BusinessCardParsedResult/organization</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>BusinessCardParsedResult.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *organization</Declaration>
+			
+			
+			<Anchor>//api/name/organization</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/BusinessCardParsedResult/birthday</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>BusinessCardParsedResult.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *birthday</Declaration>
+			
+			
+			<Anchor>//api/name/birthday</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/BusinessCardParsedResult/jobTitle</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>BusinessCardParsedResult.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *jobTitle</Declaration>
+			
+			
+			<Anchor>//api/name/jobTitle</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/BusinessCardParsedResult/url</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>BusinessCardParsedResult.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *url</Declaration>
+			
+			
+			<Anchor>//api/name/url</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

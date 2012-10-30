@@ -1,0 +1,1 @@
+../../ZXing/cpp/core/src/zxing/common/GridSampler.h

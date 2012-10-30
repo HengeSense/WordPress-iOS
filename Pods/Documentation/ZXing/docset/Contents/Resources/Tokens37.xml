@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TelResultParser.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TelResultParser</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>TelResultParser.h</DeclaredIn>
+			
+			<NodeRef refid="37"/>
+		</Token>
+		
+		
+	</File>
+</Tokens>

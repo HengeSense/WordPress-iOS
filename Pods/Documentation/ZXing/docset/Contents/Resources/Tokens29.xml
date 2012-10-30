@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/ResultParser.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/ResultParser</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>ResultParser.h</DeclaredIn>
+			
+			<NodeRef refid="29"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ResultParser/registerResultParserClass:</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>ResultParser.h</DeclaredIn>			
+			
+			<Declaration>+ (void)registerResultParserClass:(Class)resultParser</Declaration>
+			
+			
+			<Anchor>//api/name/registerResultParserClass:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ResultParser/parsedResultForString:</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>ResultParser.h</DeclaredIn>			
+			
+			<Declaration>+ (ParsedResult *)parsedResultForString:(NSString *)s</Declaration>
+			
+			
+			<Anchor>//api/name/parsedResultForString:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ResultParser/parsedResultForString:format:</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>ResultParser.h</DeclaredIn>			
+			
+			<Declaration>+ (ParsedResult *)parsedResultForString:(NSString *)s format:(BarcodeFormat)barcodeFormat</Declaration>
+			
+			
+			<Anchor>//api/name/parsedResultForString:format:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ResultParser/dictionaryForQueryString:</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>ResultParser.h</DeclaredIn>			
+			
+			<Declaration>+ (NSDictionary *)dictionaryForQueryString:(NSString *)uri</Declaration>
+			
+			
+			<Anchor>//api/name/dictionaryForQueryString:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

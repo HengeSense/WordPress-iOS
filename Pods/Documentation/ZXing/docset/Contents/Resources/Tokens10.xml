@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/EmailAddressResultParser.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/EmailAddressResultParser</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>EmailAddressResultParser.h</DeclaredIn>
+			
+			<NodeRef refid="10"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/EmailAddressResultParser/isBasicallyValidEmailAddress:</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>EmailAddressResultParser.h</DeclaredIn>			
+			
+			<Declaration>+ (BOOL)isBasicallyValidEmailAddress:(NSString *)address</Declaration>
+			
+			
+			<Anchor>//api/name/isBasicallyValidEmailAddress:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/ZXingWidgetController.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/ZXingWidgetController</TokenIdentifier>
+			<Abstract>Copyright 2009 Jeff Verkoeyen</Abstract>
+			<DeclaredIn>ZXingWidgetController.h</DeclaredIn>
+			
+			<NodeRef refid="61"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ZXingWidgetController/captureSession</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>ZXingWidgetController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) AVCaptureSession *captureSession</Declaration>
+			
+			
+			<Anchor>//api/name/captureSession</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ZXingWidgetController/prevLayer</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>ZXingWidgetController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) AVCaptureVideoPreviewLayer *prevLayer</Declaration>
+			
+			
+			<Anchor>//api/name/prevLayer</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ZXingWidgetController/readers</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>ZXingWidgetController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSSet *readers</Declaration>
+			
+			
+			<Anchor>//api/name/readers</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ZXingWidgetController/delegate</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>ZXingWidgetController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) id&lt;ZXingDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ZXingWidgetController/soundToPlay</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>ZXingWidgetController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSURL *soundToPlay</Declaration>
+			
+			
+			<Anchor>//api/name/soundToPlay</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ZXingWidgetController/result</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>ZXingWidgetController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) ParsedResult *result</Declaration>
+			
+			
+			<Anchor>//api/name/result</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ZXingWidgetController/overlayView</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>ZXingWidgetController.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) OverlayView *overlayView</Declaration>
+			
+			
+			<Anchor>//api/name/overlayView</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ZXingWidgetController/initWithDelegate:showCancel:OneDMode:</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>ZXingWidgetController.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithDelegate:(id&lt;ZXingDelegate&gt;)delegate showCancel:(BOOL)shouldShowCancel OneDMode:(BOOL)shouldUseoOneDMode</Declaration>
+			
+			
+			<Anchor>//api/name/initWithDelegate:showCancel:OneDMode:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ZXingWidgetController/fixedFocus</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>ZXingWidgetController.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)fixedFocus</Declaration>
+			
+			
+			<Anchor>//api/name/fixedFocus</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ZXingWidgetController/setTorch:</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>ZXingWidgetController.h</DeclaredIn>			
+			
+			<Declaration>- (void)setTorch:(BOOL)status</Declaration>
+			
+			
+			<Anchor>//api/name/setTorch:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ZXingWidgetController/torchIsOn</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>ZXingWidgetController.h</DeclaredIn>			
+			
+			<Declaration>- (BOOL)torchIsOn</Declaration>
+			
+			
+			<Anchor>//api/name/torchIsOn</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -1,0 +1,1 @@
+../../ZXing/iphone/ZXingWidget/Classes/DataMatrixReader.h

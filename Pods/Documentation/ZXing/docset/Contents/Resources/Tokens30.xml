@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SMSAction.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SMSAction</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>SMSAction.h</DeclaredIn>
+			
+			<NodeRef refid="30"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/SMSAction/body</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>SMSAction.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *body</Declaration>
+			
+			
+			<Anchor>//api/name/body</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SMSAction/actionWithNumber:body:</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>SMSAction.h</DeclaredIn>			
+			
+			<Declaration>+ (id)actionWithNumber:(NSString *)number body:(NSString *)body</Declaration>
+			
+			
+			<Anchor>//api/name/actionWithNumber:body:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/SMSAction/actionWithNumber:</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>SMSAction.h</DeclaredIn>			
+			
+			<Declaration>+ (id)actionWithNumber:(NSString *)number</Declaration>
+			
+			
+			<Anchor>//api/name/actionWithNumber:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

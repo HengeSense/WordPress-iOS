@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/ZXResult.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/ZXResult</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>ZXResult.h</DeclaredIn>
+			
+			<NodeRef refid="60"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ZXResult/initWithNative:</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>ZXResult.h</DeclaredIn>			
+			
+			<Declaration>- (ZXResult *)initWithNative:(zxing : : Result *)native</Declaration>
+			
+			
+			<Anchor>//api/name/initWithNative:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ZXResult/text</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>ZXResult.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)text</Declaration>
+			
+			
+			<Anchor>//api/name/text</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

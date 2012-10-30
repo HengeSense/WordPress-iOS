@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/OpenUrlAction.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/OpenUrlAction</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>OpenUrlAction.h</DeclaredIn>
+			
+			<NodeRef refid="21"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OpenUrlAction/URL</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>OpenUrlAction.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSURL *URL</Declaration>
+			
+			
+			<Anchor>//api/name/URL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OpenUrlAction/initWithURL:</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>OpenUrlAction.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithURL:(NSURL *)URL</Declaration>
+			
+			
+			<Anchor>//api/name/initWithURL:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/OpenUrlAction/actionWithURL:</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>OpenUrlAction.h</DeclaredIn>			
+			
+			<Declaration>+ (id)actionWithURL:(NSURL *)URL</Declaration>
+			
+			
+			<Anchor>//api/name/actionWithURL:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OpenUrlAction/openURL</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>OpenUrlAction.h</DeclaredIn>			
+			
+			<Declaration>- (void)openURL</Declaration>
+			
+			
+			<Anchor>//api/name/openURL</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OpenUrlAction/alertTitle</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>OpenUrlAction.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)alertTitle</Declaration>
+			
+			
+			<Anchor>//api/name/alertTitle</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OpenUrlAction/alertMessage</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>OpenUrlAction.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)alertMessage</Declaration>
+			
+			
+			<Anchor>//api/name/alertMessage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OpenUrlAction/alertButtonTitle</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>OpenUrlAction.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)alertButtonTitle</Declaration>
+			
+			
+			<Anchor>//api/name/alertButtonTitle</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OpenUrlAction/alertView:clickedButtonAtIndex:</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>OpenUrlAction.h</DeclaredIn>			
+			
+			<Declaration>- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex</Declaration>
+			
+			
+			<Anchor>//api/name/alertView:clickedButtonAtIndex:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

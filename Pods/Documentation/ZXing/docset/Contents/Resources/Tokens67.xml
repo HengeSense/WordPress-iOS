@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/DecoderDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/DecoderDelegate</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>DecoderDelegate.h</DeclaredIn>
+			
+			<NodeRef refid="67"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/DecoderDelegate/decoder:willDecodeImage:usingSubset:</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>DecoderDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (void)decoder:(Decoder *)decoder willDecodeImage:(UIImage *)image usingSubset:(UIImage *)subset</Declaration>
+			
+			
+			<Anchor>//api/name/decoder:willDecodeImage:usingSubset:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/DecoderDelegate/decoder:didDecodeImage:usingSubset:withResult:</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>DecoderDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (void)decoder:(Decoder *)decoder didDecodeImage:(UIImage *)image usingSubset:(UIImage *)subset withResult:(TwoDDecoderResult *)result</Declaration>
+			
+			
+			<Anchor>//api/name/decoder:didDecodeImage:usingSubset:withResult:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/DecoderDelegate/decoder:failedToDecodeImage:usingSubset:reason:</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>DecoderDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (void)decoder:(Decoder *)decoder failedToDecodeImage:(UIImage *)image usingSubset:(UIImage *)subset reason:(NSString *)reason</Declaration>
+			
+			
+			<Anchor>//api/name/decoder:failedToDecodeImage:usingSubset:reason:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/DecoderDelegate/decoder:foundPossibleResultPoint:</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>DecoderDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (void)decoder:(Decoder *)decoder foundPossibleResultPoint:(CGPoint)point</Declaration>
+			
+			
+			<Anchor>//api/name/decoder:foundPossibleResultPoint:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

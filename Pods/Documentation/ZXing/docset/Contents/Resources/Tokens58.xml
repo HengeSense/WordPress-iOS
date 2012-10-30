@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/ZXReader.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/ZXReader</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>ZXReader.h</DeclaredIn>
+			
+			<NodeRef refid="58"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ZXReader/initWithReader:</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>ZXReader.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithReader:(zxing : : Reader *)reader</Declaration>
+			
+			
+			<Anchor>//api/name/initWithReader:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ZXReader/decode:hints:</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>ZXReader.h</DeclaredIn>			
+			
+			<Declaration>- (ZXResult *)decode:(ZXBinaryBitmap *)bitmap hints:(ZXDecodeHints *)hints</Declaration>
+			
+			
+			<Anchor>//api/name/decode:hints:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/ProductParsedResult.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/ProductParsedResult</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>ProductParsedResult.h</DeclaredIn>
+			
+			<NodeRef refid="25"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ProductParsedResult/productID</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>ProductParsedResult.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *productID</Declaration>
+			
+			
+			<Anchor>//api/name/productID</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ProductParsedResult/normalizedProductID</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>ProductParsedResult.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *normalizedProductID</Declaration>
+			
+			
+			<Anchor>//api/name/normalizedProductID</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ProductParsedResult/initWithProductID:normalizedProductID:</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>ProductParsedResult.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithProductID:(NSString *)newProductID normalizedProductID:(NSString *)newNormalizedProductID</Declaration>
+			
+			
+			<Anchor>//api/name/initWithProductID:normalizedProductID:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -1,0 +1,629 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>ZXCapture Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<meta name="viewport" content="width=550" />
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.0.5 (build 737)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">ZXing 2.0 </a></h1>
+				<a id="developerHome" href="../index.html">ZXing team (http://code.google.com/p/zxing/people/list)</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">ZXCapture Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/back">&nbsp;&nbsp;&nbsp;&nbsp;back</option>
+	
+	<option value="//api/name/camera">&nbsp;&nbsp;&nbsp;&nbsp;camera</option>
+	
+	<option value="//api/name/captureToFilename">&nbsp;&nbsp;&nbsp;&nbsp;captureToFilename</option>
+	
+	<option value="//api/name/delegate">&nbsp;&nbsp;&nbsp;&nbsp;delegate</option>
+	
+	<option value="//api/name/front">&nbsp;&nbsp;&nbsp;&nbsp;front</option>
+	
+	<option value="//api/name/hasBack">&nbsp;&nbsp;&nbsp;&nbsp;hasBack</option>
+	
+	<option value="//api/name/hasFront">&nbsp;&nbsp;&nbsp;&nbsp;hasFront</option>
+	
+	<option value="//api/name/hasTorch">&nbsp;&nbsp;&nbsp;&nbsp;hasTorch</option>
+	
+	<option value="//api/name/layer">&nbsp;&nbsp;&nbsp;&nbsp;layer</option>
+	
+	<option value="//api/name/output">&nbsp;&nbsp;&nbsp;&nbsp;output</option>
+	
+	<option value="//api/name/torch">&nbsp;&nbsp;&nbsp;&nbsp;torch</option>
+	
+	<option value="//api/name/transform">&nbsp;&nbsp;&nbsp;&nbsp;transform</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/binary">&nbsp;&nbsp;&nbsp;&nbsp;- binary</option>
+	
+	<option value="//api/name/hard_stop">&nbsp;&nbsp;&nbsp;&nbsp;- hard_stop</option>
+	
+	<option value="//api/name/init">&nbsp;&nbsp;&nbsp;&nbsp;- init</option>
+	
+	<option value="//api/name/luminance">&nbsp;&nbsp;&nbsp;&nbsp;- luminance</option>
+	
+	<option value="//api/name/order_skip">&nbsp;&nbsp;&nbsp;&nbsp;- order_skip</option>
+	
+	<option value="//api/name/setBinary:">&nbsp;&nbsp;&nbsp;&nbsp;- setBinary:</option>
+	
+	<option value="//api/name/setLuminance:">&nbsp;&nbsp;&nbsp;&nbsp;- setLuminance:</option>
+	
+	<option value="//api/name/start">&nbsp;&nbsp;&nbsp;&nbsp;- start</option>
+	
+	<option value="//api/name/stop">&nbsp;&nbsp;&nbsp;&nbsp;- stop</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/back">back</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/camera">camera</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/captureToFilename">captureToFilename</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/delegate">delegate</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/front">front</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/hasBack">hasBack</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/hasFront">hasFront</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/hasTorch">hasTorch</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/layer">layer</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/output">output</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/torch">torch</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/transform">transform</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/binary">binary</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/hard_stop">hard_stop</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/init">init</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/luminance">luminance</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/order_skip">order_skip</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setBinary:">setBinary:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setLuminance:">setLuminance:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/start">start</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stop">stop</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="ZXCapture Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">ZXCapture Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">ZXCapture.h</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/delegate">&nbsp;&nbsp;delegate</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/captureToFilename">&nbsp;&nbsp;captureToFilename</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/transform">&nbsp;&nbsp;transform</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/output">&nbsp;&nbsp;output</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/layer">&nbsp;&nbsp;layer</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/init">&ndash;&nbsp;init</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/luminance">&ndash;&nbsp;luminance</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setLuminance:">&ndash;&nbsp;setLuminance:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/binary">&ndash;&nbsp;binary</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setBinary:">&ndash;&nbsp;setBinary:</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/start">&ndash;&nbsp;start</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stop">&ndash;&nbsp;stop</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/hard_stop">&ndash;&nbsp;hard_stop</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/order_skip">&ndash;&nbsp;order_skip</a></code>
+		
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/hasFront">&nbsp;&nbsp;hasFront</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/hasBack">&nbsp;&nbsp;hasBack</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/hasTorch">&nbsp;&nbsp;hasTorch</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/front">&nbsp;&nbsp;front</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/back">&nbsp;&nbsp;back</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/camera">&nbsp;&nbsp;camera</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/torch">&nbsp;&nbsp;torch</a></code>
+		
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/back" title="back"></a>
+	<h3 class="subsubtitle method-title">back</h3>
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/camera" title="camera"></a>
+	<h3 class="subsubtitle method-title">camera</h3>
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/captureToFilename" title="captureToFilename"></a>
+	<h3 class="subsubtitle method-title">captureToFilename</h3>
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/delegate" title="delegate"></a>
+	<h3 class="subsubtitle method-title">delegate</h3>
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/front" title="front"></a>
+	<h3 class="subsubtitle method-title">front</h3>
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/hasBack" title="hasBack"></a>
+	<h3 class="subsubtitle method-title">hasBack</h3>
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/hasFront" title="hasFront"></a>
+	<h3 class="subsubtitle method-title">hasFront</h3>
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/hasTorch" title="hasTorch"></a>
+	<h3 class="subsubtitle method-title">hasTorch</h3>
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/layer" title="layer"></a>
+	<h3 class="subsubtitle method-title">layer</h3>
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/output" title="output"></a>
+	<h3 class="subsubtitle method-title">output</h3>
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/torch" title="torch"></a>
+	<h3 class="subsubtitle method-title">torch</h3>
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/transform" title="transform"></a>
+	<h3 class="subsubtitle method-title">transform</h3>
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/binary" title="binary"></a>
+	<h3 class="subsubtitle method-title">binary</h3>
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/hard_stop" title="hard_stop"></a>
+	<h3 class="subsubtitle method-title">hard_stop</h3>
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/init" title="init"></a>
+	<h3 class="subsubtitle method-title">init</h3>
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/luminance" title="luminance"></a>
+	<h3 class="subsubtitle method-title">luminance</h3>
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/order_skip" title="order_skip"></a>
+	<h3 class="subsubtitle method-title">order_skip</h3>
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setBinary:" title="setBinary:"></a>
+	<h3 class="subsubtitle method-title">setBinary:</h3>
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setLuminance:" title="setLuminance:"></a>
+	<h3 class="subsubtitle method-title">setLuminance:</h3>
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/start" title="start"></a>
+	<h3 class="subsubtitle method-title">start</h3>
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/stop" title="stop"></a>
+	<h3 class="subsubtitle method-title">stop</h3>
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2012 ZXing team (http://code.google.com/p/zxing/people/list). All rights reserved. (Last updated: 2012-10-23)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.0.5 (build 737)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+		</script>
+	</body>
+</html>

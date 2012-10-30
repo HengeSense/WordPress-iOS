@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/SMSResultParser.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/SMSResultParser</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>SMSResultParser.h</DeclaredIn>
+			
+			<NodeRef refid="32"/>
+		</Token>
+		
+		
+	</File>
+</Tokens>

@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/ZXCapture.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/ZXCapture</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>ZXCapture.h</DeclaredIn>
+			
+			<NodeRef refid="49"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ZXCapture/delegate</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>ZXCapture.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) id&lt;ZXCaptureDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ZXCapture/captureToFilename</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>ZXCapture.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *captureToFilename</Declaration>
+			
+			
+			<Anchor>//api/name/captureToFilename</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ZXCapture/transform</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>ZXCapture.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) CGAffineTransform transform</Declaration>
+			
+			
+			<Anchor>//api/name/transform</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ZXCapture/output</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>ZXCapture.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) ZXCaptureVideoOutput *output</Declaration>
+			
+			
+			<Anchor>//api/name/output</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ZXCapture/layer</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>ZXCapture.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) CALayer *layer</Declaration>
+			
+			
+			<Anchor>//api/name/layer</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ZXCapture/init</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>ZXCapture.h</DeclaredIn>			
+			
+			<Declaration>- (id)init</Declaration>
+			
+			
+			<Anchor>//api/name/init</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ZXCapture/luminance</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>ZXCapture.h</DeclaredIn>			
+			
+			<Declaration>- (CALayer *)luminance</Declaration>
+			
+			
+			<Anchor>//api/name/luminance</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ZXCapture/setLuminance:</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>ZXCapture.h</DeclaredIn>			
+			
+			<Declaration>- (void)setLuminance:(BOOL)on_off</Declaration>
+			
+			
+			<Anchor>//api/name/setLuminance:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ZXCapture/binary</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>ZXCapture.h</DeclaredIn>			
+			
+			<Declaration>- (CALayer *)binary</Declaration>
+			
+			
+			<Anchor>//api/name/binary</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ZXCapture/setBinary:</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>ZXCapture.h</DeclaredIn>			
+			
+			<Declaration>- (void)setBinary:(BOOL)on_off</Declaration>
+			
+			
+			<Anchor>//api/name/setBinary:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ZXCapture/start</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>ZXCapture.h</DeclaredIn>			
+			
+			<Declaration>- (void)start</Declaration>
+			
+			
+			<Anchor>//api/name/start</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ZXCapture/stop</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>ZXCapture.h</DeclaredIn>			
+			
+			<Declaration>- (void)stop</Declaration>
+			
+			
+			<Anchor>//api/name/stop</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ZXCapture/hard_stop</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>ZXCapture.h</DeclaredIn>			
+			
+			<Declaration>- (void)hard_stop</Declaration>
+			
+			
+			<Anchor>//api/name/hard_stop</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ZXCapture/order_skip</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>ZXCapture.h</DeclaredIn>			
+			
+			<Declaration>- (void)order_skip</Declaration>
+			
+			
+			<Anchor>//api/name/order_skip</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ZXCapture/hasFront</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>ZXCapture.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL hasFront</Declaration>
+			
+			
+			<Anchor>//api/name/hasFront</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ZXCapture/hasBack</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>ZXCapture.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL hasBack</Declaration>
+			
+			
+			<Anchor>//api/name/hasBack</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ZXCapture/hasTorch</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>ZXCapture.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) BOOL hasTorch</Declaration>
+			
+			
+			<Anchor>//api/name/hasTorch</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ZXCapture/front</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>ZXCapture.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) int front</Declaration>
+			
+			
+			<Anchor>//api/name/front</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ZXCapture/back</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>ZXCapture.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, readonly) int back</Declaration>
+			
+			
+			<Anchor>//api/name/back</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ZXCapture/camera</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>ZXCapture.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) int camera</Declaration>
+			
+			
+			<Anchor>//api/name/camera</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ZXCapture/torch</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>ZXCapture.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic) BOOL torch</Declaration>
+			
+			
+			<Anchor>//api/name/torch</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

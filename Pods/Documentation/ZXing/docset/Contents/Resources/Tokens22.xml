@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/OverlayView.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/OverlayView</TokenIdentifier>
+			<Abstract>Copyright 2009 Jeff Verkoeyen</Abstract>
+			<DeclaredIn>OverlayView.h</DeclaredIn>
+			
+			<NodeRef refid="22"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OverlayView/points</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>OverlayView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSMutableArray *points</Declaration>
+			
+			
+			<Anchor>//api/name/points</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OverlayView/delegate</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>OverlayView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) id&lt;CancelDelegate&gt; delegate</Declaration>
+			
+			
+			<Anchor>//api/name/delegate</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OverlayView/oneDMode</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>OverlayView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) BOOL oneDMode</Declaration>
+			
+			
+			<Anchor>//api/name/oneDMode</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OverlayView/cropRect</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>OverlayView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, assign) CGRect cropRect</Declaration>
+			
+			
+			<Anchor>//api/name/cropRect</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/OverlayView/displayedMessage</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>OverlayView.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *displayedMessage</Declaration>
+			
+			
+			<Anchor>//api/name/displayedMessage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OverlayView/initWithFrame:cancelEnabled:oneDMode:</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>OverlayView.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithFrame:(CGRect)theFrame cancelEnabled:(BOOL)isCancelEnabled oneDMode:(BOOL)isOneDModeEnabled</Declaration>
+			
+			
+			<Anchor>//api/name/initWithFrame:cancelEnabled:oneDMode:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/OverlayView/setPoint:</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>OverlayView.h</DeclaredIn>			
+			
+			<Declaration>- (void)setPoint:(CGPoint)point</Declaration>
+			
+			
+			<Anchor>//api/name/setPoint:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

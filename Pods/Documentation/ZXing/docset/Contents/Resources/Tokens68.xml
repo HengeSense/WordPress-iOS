@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Protocols/ZXCaptureDelegate.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intf/ZXCaptureDelegate</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>ZXCaptureDelegate.h</DeclaredIn>
+			
+			<NodeRef refid="68"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ZXCaptureDelegate/captureResult:result:</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>ZXCaptureDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (void)captureResult:(ZXCapture *)capture result:(ZXResult *)result</Declaration>
+			
+			
+			<Anchor>//api/name/captureResult:result:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/ZXCaptureDelegate/captureSize:width:height:</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>ZXCaptureDelegate.h</DeclaredIn>			
+			
+			<Declaration>- (void)captureSize:(ZXCapture *)capture width:(NSNumber *)width height:(NSNumber *)height</Declaration>
+			
+			
+			<Anchor>//api/name/captureSize:width:height:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

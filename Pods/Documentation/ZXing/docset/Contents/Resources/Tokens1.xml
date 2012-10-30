@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/AddContactAction.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/AddContactAction</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>AddContactAction.h</DeclaredIn>
+			
+			<NodeRef refid="1"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AddContactAction/name</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>AddContactAction.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *name</Declaration>
+			
+			
+			<Anchor>//api/name/name</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AddContactAction/phoneNumbers</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>AddContactAction.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSArray *phoneNumbers</Declaration>
+			
+			
+			<Anchor>//api/name/phoneNumbers</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AddContactAction/note</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>AddContactAction.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *note</Declaration>
+			
+			
+			<Anchor>//api/name/note</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AddContactAction/email</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>AddContactAction.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *email</Declaration>
+			
+			
+			<Anchor>//api/name/email</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AddContactAction/urlString</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>AddContactAction.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *urlString</Declaration>
+			
+			
+			<Anchor>//api/name/urlString</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AddContactAction/address</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>AddContactAction.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *address</Declaration>
+			
+			
+			<Anchor>//api/name/address</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AddContactAction/organization</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>AddContactAction.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *organization</Declaration>
+			
+			
+			<Anchor>//api/name/organization</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/AddContactAction/jobTitle</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>AddContactAction.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *jobTitle</Declaration>
+			
+			
+			<Anchor>//api/name/jobTitle</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/AddContactAction/actionWithName:phoneNumbers:email:url:address:note:organization:jobTitle:</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>AddContactAction.h</DeclaredIn>			
+			
+			<Declaration>+ (id)actionWithName:(NSString *)n phoneNumbers:(NSArray *)nums email:(NSString *)em url:(NSString *)us address:(NSString *)ad note:(NSString *)nt organization:(NSString *)org jobTitle:(NSString *)title</Declaration>
+			
+			
+			<Anchor>//api/name/actionWithName:phoneNumbers:email:url:address:note:organization:jobTitle:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

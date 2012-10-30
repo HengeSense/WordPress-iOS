@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/ZXBinarizer.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/ZXBinarizer</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>ZXBinarizer.h</DeclaredIn>
+			
+			<NodeRef refid="46"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ZXBinarizer/initWithNative:</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>ZXBinarizer.h</DeclaredIn>			
+			
+			<Declaration>- (ZXBinarizer *)initWithNative:(zxing : : Binarizer *)native</Declaration>
+			
+			
+			<Anchor>//api/name/initWithNative:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ZXBinarizer/native</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>ZXBinarizer.h</DeclaredIn>			
+			
+			<Declaration>- (zxing : : Binarizer *)native</Declaration>
+			
+			
+			<Anchor>//api/name/native</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ZXBinarizer/createImage</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>ZXBinarizer.h</DeclaredIn>			
+			
+			<Declaration>- (CGImageRef)createImage</Declaration>
+			
+			
+			<Anchor>//api/name/createImage</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

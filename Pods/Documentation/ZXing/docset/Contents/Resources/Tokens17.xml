@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/ISBNResultParser.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/ISBNResultParser</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>ISBNResultParser.h</DeclaredIn>
+			
+			<NodeRef refid="17"/>
+		</Token>
+		
+		
+	</File>
+</Tokens>

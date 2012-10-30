@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/URIParsedResult.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/URIParsedResult</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>URIParsedResult.h</DeclaredIn>
+			
+			<NodeRef refid="41"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/URIParsedResult/initWithURLString:title:URL:</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>URIParsedResult.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithURLString:(NSString *)s title:(NSString *)t URL:(NSURL *)ur</Declaration>
+			
+			
+			<Anchor>//api/name/initWithURLString:title:URL:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/URIParsedResult/initWithURLString:title:</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>URIParsedResult.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithURLString:(NSString *)s title:(NSString *)t</Declaration>
+			
+			
+			<Anchor>//api/name/initWithURLString:title:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/URIParsedResult/initWithURLString:URL:</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>URIParsedResult.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithURLString:(NSString *)s URL:(NSURL *)ur</Declaration>
+			
+			
+			<Anchor>//api/name/initWithURLString:URL:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/URIParsedResult/initWithURLString:</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>URIParsedResult.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithURLString:(NSString *)s</Declaration>
+			
+			
+			<Anchor>//api/name/initWithURLString:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/URIParsedResult/urlString</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>URIParsedResult.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *urlString</Declaration>
+			
+			
+			<Anchor>//api/name/urlString</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/URIParsedResult/title</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>URIParsedResult.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *title</Declaration>
+			
+			
+			<Anchor>//api/name/title</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/URIParsedResult/URL</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>URIParsedResult.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSURL *URL</Declaration>
+			
+			
+			<Anchor>//api/name/URL</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

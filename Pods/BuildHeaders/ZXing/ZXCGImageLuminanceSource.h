@@ -1,0 +1,1 @@
+../../ZXing/objc/src/ZXing/ZXCGImageLuminanceSource.h

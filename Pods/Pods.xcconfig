@@ -1,7 +1,7 @@
 PODS_ROOT = ${SRCROOT}/Pods
-PODS_PUBLIC_HEADERS_SEARCH_PATHS = "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/AFNetworking" "${PODS_ROOT}/Headers/CTidy" "${PODS_ROOT}/Headers/JSONKit" "${PODS_ROOT}/Headers/NSURL+IDN" "${PODS_ROOT}/Headers/Reachability"
 PODS_HEADERS_SEARCH_PATHS = ${PODS_PUBLIC_HEADERS_SEARCH_PATHS}
-OTHER_LDFLAGS = -ObjC -framework MobileCoreServices -framework SystemConfiguration
 ALWAYS_SEARCH_USER_PATHS = YES
-HEADER_SEARCH_PATHS = ${PODS_HEADERS_SEARCH_PATHS}
-PODS_BUILD_HEADERS_SEARCH_PATHS = "${PODS_ROOT}/BuildHeaders" "${PODS_ROOT}/BuildHeaders/AFNetworking" "${PODS_ROOT}/BuildHeaders/CTidy" "${PODS_ROOT}/BuildHeaders/JSONKit" "${PODS_ROOT}/BuildHeaders/NSURL+IDN" "${PODS_ROOT}/BuildHeaders/Reachability"
+OTHER_LDFLAGS = -ObjC -liconv -lstdc++ -framework AVFoundation -framework AddressBook -framework AddressBookUI -framework AudioToolbox -framework CoreGraphics -framework CoreMedia -framework CoreVideo -framework ImageIO -framework MobileCoreServices -framework QuartzCore -framework SystemConfiguration
+HEADER_SEARCH_PATHS = ${PODS_ROOT}/ZXing/cpp/core/src/ ${PODS_ROOT}/ZXing/iphone/ZXingWidget/Classes/ ${PODS_HEADERS_SEARCH_PATHS}
+PODS_BUILD_HEADERS_SEARCH_PATHS = "${PODS_ROOT}/BuildHeaders" "${PODS_ROOT}/BuildHeaders/AFNetworking" "${PODS_ROOT}/BuildHeaders/CTidy" "${PODS_ROOT}/BuildHeaders/JSONKit" "${PODS_ROOT}/BuildHeaders/NSURL+IDN" "${PODS_ROOT}/BuildHeaders/Reachability" "${PODS_ROOT}/BuildHeaders/ZXing"
+PODS_PUBLIC_HEADERS_SEARCH_PATHS = "${PODS_ROOT}/Headers" "${PODS_ROOT}/Headers/AFNetworking" "${PODS_ROOT}/Headers/CTidy" "${PODS_ROOT}/Headers/JSONKit" "${PODS_ROOT}/Headers/NSURL+IDN" "${PODS_ROOT}/Headers/Reachability" "${PODS_ROOT}/Headers/ZXing"

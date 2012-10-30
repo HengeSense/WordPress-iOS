@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/MultiFormatOneDReader.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/MultiFormatOneDReader</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>MultiFormatOneDReader.h</DeclaredIn>
+			
+			<NodeRef refid="19"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/MultiFormatOneDReader/init</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>MultiFormatOneDReader.h</DeclaredIn>			
+			
+			<Declaration>- (id)init</Declaration>
+			
+			
+			<Anchor>//api/name/init</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/EmailAction.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/EmailAction</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>EmailAction.h</DeclaredIn>
+			
+			<NodeRef refid="9"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EmailAction/recipient</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>EmailAction.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *recipient</Declaration>
+			
+			
+			<Anchor>//api/name/recipient</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/EmailAction/initWithRecipient:subject:body:</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>EmailAction.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithRecipient:(NSString *)recipient subject:(NSString *)subject body:(NSString *)body</Declaration>
+			
+			
+			<Anchor>//api/name/initWithRecipient:subject:body:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/EmailAction/actionWithRecipient:subject:body:</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>EmailAction.h</DeclaredIn>			
+			
+			<Declaration>+ (id)actionWithRecipient:(NSString *)recipient subject:(NSString *)subject body:(NSString *)body</Declaration>
+			
+			
+			<Anchor>//api/name/actionWithRecipient:subject:body:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

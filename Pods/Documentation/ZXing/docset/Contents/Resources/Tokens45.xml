@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/VCardResultParser.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/VCardResultParser</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>VCardResultParser.h</DeclaredIn>
+			
+			<NodeRef refid="45"/>
+		</Token>
+		
+		
+	</File>
+</Tokens>

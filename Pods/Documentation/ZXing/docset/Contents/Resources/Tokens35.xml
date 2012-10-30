@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/ShowMapAction.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/ShowMapAction</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>ShowMapAction.h</DeclaredIn>
+			
+			<NodeRef refid="35"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ShowMapAction/location</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>ShowMapAction.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *location</Declaration>
+			
+			
+			<Anchor>//api/name/location</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ShowMapAction/initWithLocation:</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>ShowMapAction.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithLocation:(NSString *)location</Declaration>
+			
+			
+			<Anchor>//api/name/initWithLocation:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/ShowMapAction/actionWithLocation:</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>ShowMapAction.h</DeclaredIn>			
+			
+			<Declaration>+ (id)actionWithLocation:(NSString *)location</Declaration>
+			
+			
+			<Anchor>//api/name/actionWithLocation:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

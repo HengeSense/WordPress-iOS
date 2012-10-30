@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/FormatReader.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/FormatReader</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>FormatReader.h</DeclaredIn>
+			
+			<NodeRef refid="13"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/FormatReader/registerFormatReader:</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>FormatReader.h</DeclaredIn>			
+			
+			<Declaration>+ (void)registerFormatReader:(FormatReader *)formatReader</Declaration>
+			
+			
+			<Anchor>//api/name/registerFormatReader:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FormatReader/initWithReader:</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>FormatReader.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithReader:(zxing : : Reader *)reader</Declaration>
+			
+			
+			<Anchor>//api/name/initWithReader:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FormatReader/decode:</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>FormatReader.h</DeclaredIn>			
+			
+			<Declaration>- (zxing : : Ref&lt;zxing::Result&gt;)decode:(zxing : : Ref&lt;zxing::BinaryBitmap&gt;)grayImage</Declaration>
+			
+			
+			<Anchor>//api/name/decode:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/FormatReader/decode:andCallback:</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>FormatReader.h</DeclaredIn>			
+			
+			<Declaration>- (zxing : : Ref&lt;zxing::Result&gt;)decode:(zxing : : Ref&lt;zxing::BinaryBitmap&gt;)grayImage andCallback:(zxing : : Ref&lt;zxing::ResultPointCallback&gt;)callback</Declaration>
+			
+			
+			<Anchor>//api/name/decode:andCallback:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

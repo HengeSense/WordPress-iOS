@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/GeoParsedResult.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/GeoParsedResult</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>GeoParsedResult.h</DeclaredIn>
+			
+			<NodeRef refid="14"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/GeoParsedResult/location</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>GeoParsedResult.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *location</Declaration>
+			
+			
+			<Anchor>//api/name/location</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/GeoParsedResult/initWithLocation:</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>GeoParsedResult.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithLocation:(NSString *)location</Declaration>
+			
+			
+			<Anchor>//api/name/initWithLocation:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

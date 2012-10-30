@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Categories/NSString(DoCoMoFieldParsing).html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cat/NSString(DoCoMoFieldParsing)</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>ArrayAndStringCategories.h</DeclaredIn>
+			
+			<NodeRef refid="63"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(DoCoMoFieldParsing)/backslashUnescaped</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>ArrayAndStringCategories.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)backslashUnescaped</Declaration>
+			
+			
+			<Anchor>//api/name/backslashUnescaped</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(DoCoMoFieldParsing)/fieldsWithPrefix:</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>ArrayAndStringCategories.h</DeclaredIn>			
+			
+			<Declaration>- (NSArray *)fieldsWithPrefix:(NSString *)prefix</Declaration>
+			
+			
+			<Anchor>//api/name/fieldsWithPrefix:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(DoCoMoFieldParsing)/fieldsWithPrefix:terminator:</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>ArrayAndStringCategories.h</DeclaredIn>			
+			
+			<Declaration>- (NSArray *)fieldsWithPrefix:(NSString *)prefix terminator:(NSString *)term</Declaration>
+			
+			
+			<Anchor>//api/name/fieldsWithPrefix:terminator:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(DoCoMoFieldParsing)/fieldWithPrefix:</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>ArrayAndStringCategories.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)fieldWithPrefix:(NSString *)prefix</Declaration>
+			
+			
+			<Anchor>//api/name/fieldWithPrefix:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(DoCoMoFieldParsing)/fieldWithPrefix:terminator:</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>ArrayAndStringCategories.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)fieldWithPrefix:(NSString *)prefix terminator:(NSString *)term</Declaration>
+			
+			
+			<Anchor>//api/name/fieldWithPrefix:terminator:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/intfm/NSString(DoCoMoFieldParsing)/stringWithTrimmedWhitespace</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>ArrayAndStringCategories.h</DeclaredIn>			
+			
+			<Declaration>- (NSString *)stringWithTrimmedWhitespace</Declaration>
+			
+			
+			<Anchor>//api/name/stringWithTrimmedWhitespace</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

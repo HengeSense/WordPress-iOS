@@ -1,0 +1,1 @@
+../../ZXing/cpp/core/src/zxing/oned/ITFReader.h

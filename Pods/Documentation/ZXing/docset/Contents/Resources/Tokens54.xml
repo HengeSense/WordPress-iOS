@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/ZXImage.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/ZXImage</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>ZXImage.h</DeclaredIn>
+			
+			<NodeRef refid="54"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/ZXImage/cgimage</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>ZXImage.h</DeclaredIn>			
+			
+			<Declaration>@property (readonly) CGImageRef cgimage</Declaration>
+			
+			
+			<Anchor>//api/name/cgimage</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ZXImage/initWithURL:</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>ZXImage.h</DeclaredIn>			
+			
+			<Declaration>- (ZXImage *)initWithURL:(NSURL const *)url</Declaration>
+			
+			
+			<Anchor>//api/name/initWithURL:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ZXImage/width</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>ZXImage.h</DeclaredIn>			
+			
+			<Declaration>- (size_t)width</Declaration>
+			
+			
+			<Anchor>//api/name/width</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/ZXImage/height</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>ZXImage.h</DeclaredIn>			
+			
+			<Declaration>- (size_t)height</Declaration>
+			
+			
+			<Anchor>//api/name/height</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

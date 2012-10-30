@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/EmailParsedResult.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/EmailParsedResult</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>EmailParsedResult.h</DeclaredIn>
+			
+			<NodeRef refid="12"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EmailParsedResult/to</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>EmailParsedResult.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *to</Declaration>
+			
+			
+			<Anchor>//api/name/to</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EmailParsedResult/subject</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>EmailParsedResult.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *subject</Declaration>
+			
+			
+			<Anchor>//api/name/subject</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/EmailParsedResult/body</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>EmailParsedResult.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, copy) NSString *body</Declaration>
+			
+			
+			<Anchor>//api/name/body</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/EmailParsedResult/looksLikeAnEmailAddress:</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>EmailParsedResult.h</DeclaredIn>			
+			
+			<Declaration>+ (bool)looksLikeAnEmailAddress:(NSString *)s</Declaration>
+			
+			
+			<Anchor>//api/name/looksLikeAnEmailAddress:</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

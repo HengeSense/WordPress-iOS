@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TwoDDecoderResult.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TwoDDecoderResult</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>TwoDDecoderResult.h</DeclaredIn>
+			
+			<NodeRef refid="40"/>
+		</Token>
+		
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TwoDDecoderResult/text</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>TwoDDecoderResult.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSString *text</Declaration>
+			
+			
+			<Anchor>//api/name/text</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instp/TwoDDecoderResult/points</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>TwoDDecoderResult.h</DeclaredIn>			
+			
+			<Declaration>@property (nonatomic, retain) NSArray *points</Declaration>
+			
+			
+			<Anchor>//api/name/points</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/clm/TwoDDecoderResult/resultWithText:points:</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>TwoDDecoderResult.h</DeclaredIn>			
+			
+			<Declaration>+ (id)resultWithText:(NSString *)text points:(NSArray *)points</Declaration>
+			
+			
+			<Anchor>//api/name/resultWithText:points:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TwoDDecoderResult/initWithText:points:</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>TwoDDecoderResult.h</DeclaredIn>			
+			
+			<Declaration>- (id)initWithText:(NSString *)text points:(NSArray *)points</Declaration>
+			
+			
+			<Anchor>//api/name/initWithText:points:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TwoDDecoderResult/copyWithZone:</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>TwoDDecoderResult.h</DeclaredIn>			
+			
+			<Declaration>- (id)copyWithZone:(NSZone *)zone</Declaration>
+			
+			
+			<Anchor>//api/name/copyWithZone:</Anchor>
+		</Token>
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/instm/TwoDDecoderResult/copy</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>TwoDDecoderResult.h</DeclaredIn>			
+			
+			<Declaration>- (id)copy</Declaration>
+			
+			
+			<Anchor>//api/name/copy</Anchor>
+		</Token>
+		
+	</File>
+</Tokens>

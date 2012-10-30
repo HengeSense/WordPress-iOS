@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Tokens version="1.0">
+	<File path="Classes/TextResultParser.html">
+		
+		<Token>
+			<TokenIdentifier>//apple_ref/occ/cl/TextResultParser</TokenIdentifier>
+			<Abstract></Abstract>
+			<DeclaredIn>TextResultParser.h</DeclaredIn>
+			
+			<NodeRef refid="39"/>
+		</Token>
+		
+		
+	</File>
+</Tokens>

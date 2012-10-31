@@ -23,6 +23,7 @@
 @property (nonatomic, strong) UIView *contentView;
 @property (nonatomic, strong) UIView *presentedView;
 @property (nonatomic, strong) NSMutableArray *observers;
+@property (nonatomic, strong) UIView *promptView;
 @property BOOL handleCapture;
 
 - (IBAction)cancel:(id)sender;
@@ -57,6 +58,7 @@
     self.contentView = nil;
     self.delegate = nil;
     self.datasource = nil;
+    self.promptView = nil;
     
 }
 
@@ -135,18 +137,16 @@
     [self presentViewInContentView:view andAnimate:YES onComplete:completeBlock];
 }
 
-- (void)presentViewInContentView:(UIView *)view andAnimate:(BOOL)animate onComplete:(void (^)())completeBlock  {
+- (void)presentViewInContentView:(UIView *)newView andAnimate:(BOOL)animate onComplete:(void (^)())completeBlock  {
     // just change the vertical height to match and move the y position to compensate
-    CGRect viewFrame = view.frame;
+    CGRect viewFrame = newView.frame;
     CGRect contentViewFrame = self.contentView.frame;
-    CGRect modalViewFrame = self.view.frame;
-    CGFloat heightDelta = viewFrame.size.height - contentViewFrame.size.height;
-    CGFloat yDelta = heightDelta * 0.5f;
+    CGRect modalViewFrame = self.view.bounds;
     
     [self.navigationItem setLeftBarButtonItem:nil animated:animate];
     
-    if (view.superview != self.contentView) {
-        [self.contentView addSubview:view];
+    if (newView.superview != self.contentView) {
+        [self.contentView addSubview:newView];
     }
     
     UIView *replacedView = self.presentedView;
@@ -154,17 +154,19 @@
     [self.view endEditing:YES];
     
     contentViewFrame.size.height = viewFrame.size.height;
-    modalViewFrame.origin.y -= yDelta;
-    modalViewFrame.size.height = contentViewFrame.size.height + self.navigationBar.frame.size.height;
+    contentViewFrame.origin.y = CGRectGetMaxY(self.navigationBar.frame);
+    modalViewFrame.size.height = CGRectGetMaxY(contentViewFrame);
+    modalViewFrame.origin = self.view.superview.center;
+    modalViewFrame.origin.x -= modalViewFrame.size.width * 0.5f;
+    modalViewFrame.origin.y -= modalViewFrame.size.height * 0.5f;
     NSTimeInterval duration = animate ? 0.2f : 0.f;
     [UIView animateWithDuration:duration animations:^{
         self.view.frame = modalViewFrame;
-        self.view.center = self.view.superview.center;
         self.contentView.frame = contentViewFrame;
         replacedView.alpha = 0.f;
     } completion:^(BOOL finished) {
         [self.presentedView removeFromSuperview];
-        self.presentedView = view;
+        self.presentedView = newView;
         if (completeBlock) {
             completeBlock();
         }
@@ -278,7 +280,9 @@
                                                                                   action:@selector(showBarCodeScanner)];
 
     [self presentViewInContentView:textFieldContainer onComplete:^{
-        [self.navigationItem setLeftBarButtonItem:cameraButton animated:YES];
+        if ([self deviceSupportsVideo]) {
+            [self.navigationItem setLeftBarButtonItem:cameraButton animated:YES];
+        }
         [codeTextField becomeFirstResponder];
     }];
     
@@ -305,7 +309,6 @@
     
     resetButton.frame = CGRectMake(0.f, 0.f, 120.f, 44.f);
     resetButton.center = CGPointMake(frame.size.width * 0.5f, frame.size.height * 0.5f);
-    
     
     [UIView transitionWithView:self.view duration:0.6f options:UIViewAnimationOptionTransitionFlipFromRight animations:^{
         [self.presentedView removeFromSuperview];
@@ -461,16 +464,58 @@ didOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer
 
 #pragma mark - UITextFieldDelegate
 
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
+    [UIView animateWithDuration:0.2f animations:^{
+        textField.textColor = [UIColor blackColor];
+    }];
+    if (self.promptView) {
+        [self.promptView removeFromSuperview];
+        self.promptView = nil;
+    }
+    return YES;
+}
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {
-    NSString *text = textField.text;
+    
     
     NSString *encodedSecret = textField.text;
     NSData *secret = [OTPAuthURL base32Decode:encodedSecret];
-
-    OTPAuthURL *url = [[HOTPAuthURL alloc] initWithSecret:secret name:@"WordPress.com"];
-    [self didGenerateAuthURL:url];
+    
+    if( [secret length] ){
+        self.navigationItem.prompt = nil;
+        OTPAuthURL *url = [[HOTPAuthURL alloc] initWithSecret:secret name:@"WordPress.com"];
+        [self didGenerateAuthURL:url];
+    } else {
+        if (self.promptView) {
+            return NO;
+        }
+        UILabel *prompt = [[UILabel alloc] initWithFrame:CGRectMake(0.f, 0.f, 120.f, 36.f)];
+        prompt.font = [UIFont boldSystemFontOfSize:14.f];
+        prompt.textAlignment = NSTextAlignmentCenter;
+        prompt.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.8f];
+        prompt.textColor = [UIColor whiteColor];
+        prompt.layer.cornerRadius = 4.f;
+        prompt.shadowColor = [UIColor blackColor];
+        prompt.shadowOffset = CGSizeMake(0.f, -1.f);
+        prompt.text = @"Invalid Key";
+        prompt.center = self.contentView.center;
+        prompt.alpha = 0.f;
+        self.promptView = prompt;
+        [UIView animateWithDuration:0.2f animations:^{
+            self.promptView.alpha = 1.f;
+        } completion:^(BOOL finished) {
+            [UIView animateWithDuration:0.2f delay:1.f options:kNilOptions animations:^{
+                self.promptView.alpha = 0.f;
+            } completion:^(BOOL finished) {
+                [self.promptView removeFromSuperview];
+                self.promptView = nil;
+            }];
+        }];
+        
+        [self.view addSubview:prompt];
+    }
     return NO;
+
 }
 
 @end

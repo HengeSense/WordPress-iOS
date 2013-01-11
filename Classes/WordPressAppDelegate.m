@@ -1048,11 +1048,14 @@
             }
             break;
         case UIApplicationStateInactive:
-            NSLog(@"app state UIApplicationStateInactive"); //application is in bg and the user tapped the view button
-             [self openNotificationScreenWithOptions:userInfo];
+            /* The application is running in the foreground but is not receiving events. This might happen as a result of an interruption or because the application is transitioning to or from the background. */
+            NSLog(@"app state UIApplicationStateInactive");
+            [self openNotificationScreenWithOptions:userInfo];
             break;
         case UIApplicationStateBackground:
-            NSLog(@" app state UIApplicationStateBackground"); //?? doh!
+            /* The application is running in the background. */
+            NSLog(@" app state UIApplicationStateBackground");
+            [self openNotificationScreenWithOptions:userInfo];
             break;
         default:
             break;

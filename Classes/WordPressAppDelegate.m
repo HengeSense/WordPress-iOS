@@ -1202,8 +1202,13 @@
             WPFLog(@"Got unsupported notification: %@", remoteNotif);
         }
         
-        if( self.panelNavigationController )
+        if( self.panelNavigationController ){
+            SidebarViewController *sidebar = (SidebarViewController *)self.panelNavigationController.masterViewController;
+            // make the sidebar remember that it's showing the notifications view so
+            // it doesn't restore the previously selected view
+            [sidebar selectNotificationsRow];
             [self.panelNavigationController showNotificationsView:YES];
+        }
         
     } else if ([remoteNotif objectForKey:@"blog_id"] && [remoteNotif objectForKey:@"comment_id"]) {
         WPFLog(@"Received notification: %@", remoteNotif);

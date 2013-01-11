@@ -439,6 +439,9 @@ NSLog(@"%@", self.sectionInfoArray);
 
 
 - (void)restorePreservedSelection {
+    if (selectionRestored) {
+        return;
+    }
     NSDictionary *dict = [[NSUserDefaults standardUserDefaults] dictionaryForKey:@"kSelectedSidebarIndexDictionary"];
     NSIndexPath *preservedIndexPath = [NSIndexPath indexPathForRow:[[dict objectForKey:@"row"] integerValue] inSection:[[dict objectForKey:@"section"] integerValue]];
     
@@ -470,6 +473,7 @@ NSLog(@"%@", self.sectionInfoArray);
 - (void)selectNotificationsRow {
     NSIndexPath *notificationsIndexPath = [NSIndexPath indexPathForRow: 1 inSection:0];
     if (notificationsIndexPath) {
+        selectionRestored = YES;
         [self.tableView selectRowAtIndexPath:notificationsIndexPath animated:NO scrollPosition:UITableViewScrollPositionNone];
         self.currentIndexPath = notificationsIndexPath;
     }
